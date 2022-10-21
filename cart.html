@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<! Images:
+Green Vase: https://www.ssense.com/en-us/everything-else/product/nathalie-schreckenberg/green-cae-vase/7595801?gclid=Cj0KCQjwsrWZBhC4ARIsAGGUJupUamCm_qqZpU5xbZHTd1wDJmYBFtnVmrIICqpGeql8yAK9lRGAU84aAoocEALw_wcB
+Pink and Green Vase: https://www.smallable.com/en/product/two-tone-borosilicate-vase-25-cm-green-ichendorf-milano-248590
+Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Product Listing</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+</head>
+
+<body>
+<section>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a>About</a></li>
+        <li><a href="product_listing.html">Products</a></li>
+        <li><a href="cart.html" class="active-nav-link">Cart</a></li>
+    </ul>
+
+    <!-- I added a focus and a hover state to the fields here :D -->
+    <h2>Payment form</h2>
+    <div class="container border">
+
+    <div class="block">
+        <input type="radio" id="visa" name="fav_language" value="VISA">
+        <label for="visa">Visa</label><br>
+    </div>
+    <div class="block">
+        <input type="radio" id="master" name="fav_language" value="MasterCard">
+        <label for="master">MasterCard</label><br><br>
+    </div>
+    <div class="block">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" class="field-input"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" class="field-input"><br>
+        <label for="cc">Credit card number:</label><br>
+        <input type="text" id="cc" name="cc" class="field-input"><br>
+        <label for="cc">Address:</label><br>
+        <input type="text" id="address" name="address" class="field-input"><br><br>
+        <button class="button button-secondary">SUBMIT</button>
+    </div>
+    </div>
+
+</section>
+
+<section>
+    <h2>Checkout cart</h2>
+
+    <div class="container">
+        <div class="block align-center">
+            <h3>Plisse vase</h3>
+            <p><strong>$175</strong></p>
+            <img src="Images/plisse.jpeg" alt="plisse vase" width="200" height="250" class="image-as-link"><br>
+            <a href="/link to detailed description/" class="active-link">Link to detailed description </a>
+        </div>
+        <div class="block align-center">
+            <h3>Layer cake vase</h3>
+            <p><strong>$175</strong></p>
+            <img src="Images/layer cake.jpeg" alt="plisse vase" width="200" height="250" class="image-as-link"><br>
+            <a href="/link to detailed description/" class="active-link">Link to detailed description </a>
+        </div>
+    </div>
+
+    <div class="container border">
+        <div class="block align-center">
+            <strong> SUBTOTAL: </strong> $350
+        </div>
+        <div class="block align-center">
+            <strong> SHIPPING: </strong> $10
+        </div>
+        <div class="block align-center">
+            <strong> TAXES: </strong> $45.66
+        </div>
+        <div class="block align-center">
+            <strong> TOTAL: </strong> $405.66
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="block align-center">
+            <button class="button button-primary">PURCHASE</button>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

@@ -1,13 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<! Assets:
+Font: Inter from google fonts https://fonts.google.com/specimen/Inter
+Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg>
+  <head>
 
-<head>
-  <meta charset="utf-8">
-  <title>[enter company name here] | Stylesheet</title>
+    <meta charset="utf-8">
+    <title>Style Guide Template</title>
 
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-</body>
+    <h1>Vessel Style Guide</h1>
+
+  <section>
+    <h2>Branding ideas</h2>
+    <p>Vessels is a company that offers beautiful curated homeware that includes cups, vases, and bowls.
+      The company is viewed by pontential customers as a place that has high quality products
+      that exude a refined modernity and minimalistic good taste. Potential customers are enticed to purchase
+      products because the branding of the site reflects the type of person they want to be and the
+      lifestyle they want to live. It's meant to enhance the quality of both their identity and their home.
+
+      Keywords: organic, refined, minimalistic, brutalist
+
+  </section>
+  <section id="text_elements" class="style-guide-category">
+    <h2> Original moodboard and Style Guide </h2>
+    <section class="style-guide-element">
+      <img src="Images/Frame_240.jpg" alt="styleguide" width="600" height="650" >
+    </section>
+</section>
+  <section>
+    <ul class="nav">
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#interactive_elements">Interactive Elements</a></li>
+      <li><a href="#text_elements">Text Elements</a></li>
+      <li><a href="product_listing.html">Product Listing</a></li>
+      <li><a href="cart.html">Checkout Cart</a></li>
+    </ul>
+
+    <!-- TYPOGRAPHY SECTION // -->
+  </section>
+  <section id="typography" class="style-guide-category">
+    <h2>Typography</h2>
+    <section class="style-guide-element">
+      <h3 class="align-center">Type Scale</h3>
+
+      <div class="container center-vertical ">
+        <div class="block align-left">
+          <h1>This is my H1</h1>
+        </div>
+        <div class="block align-center">
+          <p>64px, 4em</p>
+        </div>
+      </div>
+      <div class="container center-vertical">
+        <div class="block">
+          <h2>This is my H2</h2>
+        </div>
+        <div class="block align-center">
+          <p>32px, 2em</p>
+        </div>
+      </div>
+      <div class="container center-vertical">
+        <div class="block">
+          <h3>This is my H3</h3>
+        </div>
+        <div class="block align-center">
+          <p>24x, 1.5 em</p>
+        </div>
+      </div>
+      <div class="container center-vertical">
+        <div class="block">
+          <p>This is my body copy</p>
+        </div>
+        <div class="block align-center">
+          <p>16px 1em</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+
+  <section id="interactive_elements" class="style-guide-category">
+    <h2> Interactive elements</h2>
+    <section class="style-guide-element">
+      <h3 class="align-center">Buttons</h3>
+      <!referenced from w3 schools, submit and reset button
+      https://www.w3schools.com/html/html_form_input_types.asp>
+
+      <div class="container">
+        <div class="block align-center">
+          <h3>Primary Button</h3>
+          <h3>Sample code:</h3>
+          <code>&lt;button class="button button-primary"&gt;PRIMARY&lt;/button&gt;</code>
+          <h3>Rendered element:</h3>
+          <button class="button button-primary">PRIMARY</button>
+        </div>
+        <div class="block align-center">
+          <h3>Secondary Button</h3>
+          <h3>Sample code:</h3>
+          <code>&lt;button class="button button-secondary"&gt;SECONDARY&lt;/button&gt;</code>
+          <h3>Rendered element:</h3>
+          <button class="button button-secondary">SECONDARY</button>
+        </div>
+      </div>
+    </section>
+    <section class="style-guide-element">
+      <h3 class="align-center">Navigation</h3>
+      <ul class="nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </section>
+    <section class="style-guide-element">
+      <!referenced from w3 schools, in text links
+      https://www.w3schools.com/html/html_images.asp>
+      <h3 class="align-center">In-text link</h3>
+      <a href="http://www.fioravanti.eu/about" class="active-link">
+        click on this it's an inline link
+      </a>
+    </section>
+    <section class="style-guide-element">
+      <!referenced from w3 schools, image as a link
+      https://www.w3schools.com/html/html_images.asp#gsc.tab=0>
+      <h3 class="align-center">Image as a link</h3>
+      <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
+        <img src="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg"
+             alt="this is an elephant" style="width:400px;height:250px;" class="image-as-link">
+      </a>
+    </section>
+    <section class="style-guide-element">
+      <!referenced from w3 schools, input field
+      https://www.w3schools.com/html/html_form_input_types.asp>
+      <h3 class="align-center">Text Input Field</h3>
+      <label for="username">Username:</label></br>
+      <input type="text" id="username" class="field-input">
+
+    </section>
+    <section class="style-guide-element">
+      <!referenced from w3 schools, input field
+      https://www.w3schools.com/html/html_form_input_types.asp>
+      <h3 class="align-center">Radio button input field</h3>
+      <input type="radio" id="black">
+      <label for="black">black:</label></br>
+      <input type="radio" id="blue">
+      <label for="blue">blue:</label></br>
+    </section>
+  </section>
+  <section id="text_elements" class="style-guide-category">
+    <h2>Text Elements</h2>
+    <section class="style-guide-element">
+      <!referenced from w3 schools, paragraphs
+      https://www.w3schools.com/html/html_paragraphs.asp>
+      <h2>Paragraphs</h2>
+      <p> This is a paragraph.It's very short but it could be long. I can write
+        so much here when I feel like it but right now I don't need to.</p>
+    </section>
+    <section class="style-guide-element">
+      <!referenced from w3 schools, unordered lists
+      https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered>
+      <h2>Bulleted Lists</h2>
+      <ul>
+        <li>Glass</li>
+        <li>Teracotta</li>
+        <li>Ceramic</li>
+      </ul>
+    </section>
+    <section class="style-guide-element">
+      <!referenced from w3 schools, ordered lists
+      https://www.w3schools.com/html/html_lists.asp>
+      <h2>Numbered Lists</h2>
+      <ol>
+        <li>Glass</li>
+        <li>Teracotta</li>
+        <li>Ceramic</li>
+      </ol>
+    </section>
+  </body>
+</html>
