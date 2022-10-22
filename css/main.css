@@ -1,0 +1,207 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+  took inspiration from:
+  - Mail Chimp Guidelines https://ux.mailchimp.com/patterns/typography
+  - References/Sources that I learned from are placed above the point
+   where I used them in the code down below. 
+
+*/
+
+h1{
+  font-family: inter;
+  font-size: 3em;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+h2{
+  font-family: inter;
+  font-size: 2em;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+body {
+  font-family: inter;
+  font-size: 1em;
+  padding: 2rem;
+}
+/* adding space between section elements (learned from inspecting the code and playing around with it) */
+section {
+  margin: 1em 0;
+}
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  /*border-top: 1px solid #333;*/
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+/* adding 4 units of margin to the left and right (learned from inspecting the code and playing around with it) */
+/*section p {*/
+/*  margin-top: 0;*/
+/*  margin: 0 4em;*/
+/*}*/
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+.style-guide-category {
+  background: #ebeade;
+  padding: 1em;
+}
+
+.style-guide-element {
+  background: white;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling + hover state for links and images learned from https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+
+.image-as-link:hover, .image-as-link:focus {
+  box-shadow: 5px 5px 5px 5px #8888 ;
+  border: 5px solid #987868;
+}
+
+.active-link {
+  color: #0e0e0e;
+}
+
+.active-link:hover{
+  background-color: #ead6c5;
+}
+
+.button-nav {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #333;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+/*Navbar styling learned from: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: #0e0e0e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ .nav li:hover, li:focus {
+  text-decoration: underline;
+}
+
+
+.nav-element:hover .nav-element:focus {
+  /*Underline learned from: https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+  text-decoration: underline;
+}
+
+/*button styling learned from: https://www.w3schools.com/css/css3_buttons.asp*/
+.button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.button-primary {
+  background-color: #c5996a;
+  color: #0e0e0e;
+}
+
+.button-primary:hover, .button-primary:focus {
+  background-color: #e2ae76;
+}
+
+.button-secondary {
+  background-color: white;
+  border:2px solid #c5996a;
+  color: #9d7a55;
+}
+
+.button-secondary:hover, .button-secondary:focus {
+  background-color: #c5996a;
+  color: white;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #999;
+}
+/*adding hover and focus to the field learned from https://learn.shayhowe.com/html-css/building-forms/*/
+.field-input:hover{
+  box-shadow: 5px 5px 5px 5px #8888
+
+}
+
+.field-input:focus{
+  border: 2px solid rgb(142, 70, 25);
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/*got this from here: https://www.w3schools.com/HOWTO/howto_css_center-vertical.asp*/
+.center-vertical {
+  justify-content: center;
+  align-items: center;
+}
+
+.align-center{
+  text-align: center;
+
+}
+
+.align-left{
+  text-align: left;
+
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+.border {
+  border: 2px solid rgb(142, 70, 25);
+}
+
+.active-nav-link {
+  border: 2px solid rgb(142, 70, 25);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.block {
+  flex-basis: 15em;
+  flex-grow: 1;
+}
