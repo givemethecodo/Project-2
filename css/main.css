@@ -1,37 +1,43 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
   took inspiration from:
   - Mail Chimp Guidelines https://ux.mailchimp.com/patterns/typography
   - References/Sources that I learned from are placed above the point
-   where I used them in the code down below. 
+   where I used them in the code down below.
 
 */
 
 h1{
   font-family: inter;
   font-size: 3em;
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
 h2{
   font-family: inter;
   font-size: 2em;
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
 body {
   font-family: inter;
   font-size: 1em;
   padding: 2rem;
 }
+
 /* adding space between section elements (learned from inspecting the code and playing around with it) */
 section {
   margin: 1em 0;
+  border-radius: 1rem;
 }
+
 section:not([id]) {
   margin: 1em 0;
-  padding: 0.5em 0;
+  /* padding: 0.5em 0; */
+  padding: 2em;
   /*border-top: 1px solid #333;*/
 }
 
@@ -49,6 +55,22 @@ section code {
   padding: 0.5em 0.75em;
 }
 
+li {
+  padding: 1em;
+}
+
+/* reference: https://www.geeksforgeeks.org/how-to-change-the-color-of-radio-buttons-using-css/ */
+.radio {
+  accent-color: #987868; /* #light brown */
+  color: #242424; /* #almost black */
+  border-color: #dbdbdb; /* #light grey */
+}
+
+.radio:focus, .radio:hover {
+  border-color: #39C7AD; /* #turqoise */
+  outline: none;
+}
+
 .style-guide-category {
   background: #ebeade;
   padding: 1em;
@@ -59,7 +81,7 @@ section code {
 }
 
 
-/* 
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -68,6 +90,7 @@ section code {
 .image-as-link:hover, .image-as-link:focus {
   box-shadow: 5px 5px 5px 5px #8888 ;
   border: 5px solid #987868;
+  transition-duration: 0.5s;
 }
 
 .active-link {
@@ -76,8 +99,10 @@ section code {
 
 .active-link:hover{
   background-color: #ead6c5;
+  transition-duration: 0.5s;
 }
 
+/* Erin, what does this do? -Erika */
 .button-nav {
   display: inline-block;
   padding: 0.5em 0.75em;
@@ -106,17 +131,29 @@ section code {
   color: #0e0e0e;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  /* text-decoration: none; */
+  /* solution for underline transition referenced from: https://stackoverflow.com/questions/46119919/fade-in-and-out-underline-when-hovering */
+  transition-duration: 0.5s;
+  border-radius: 0.5rem;
+
+  border:2px solid #c5996a;
+  text-decoration: underline solid 0.4rem transparent;
 }
 
- .nav li:hover, li:focus {
-  text-decoration: underline;
+ .nav li a:hover, .nav li a:focus {
+  /* text-decoration: underline; */
+  transition-duration: 0.5s;
+  background-color: white;
+
+  border:2px solid white;
+  text-decoration: underline solid 0.4rem #c5996a;
 }
 
 
 .nav-element:hover .nav-element:focus {
   /*Underline learned from: https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
   text-decoration: underline;
+  transition-duration: 0.5s;
 }
 
 /*button styling learned from: https://www.w3schools.com/css/css3_buttons.asp*/
@@ -127,6 +164,7 @@ section code {
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
+  border-radius: 0.5rem;
 }
 
 .button-primary {
@@ -136,6 +174,7 @@ section code {
 
 .button-primary:hover, .button-primary:focus {
   background-color: #e2ae76;
+  transition-duration: 0.5s;
 }
 
 .button-secondary {
@@ -147,23 +186,27 @@ section code {
 .button-secondary:hover, .button-secondary:focus {
   background-color: #c5996a;
   color: white;
+  transition-duration: 0.5s;
 }
 
 .button-nav:hover, .button-nav:focus {
   background-color: #999;
+  transition-duration: 0.5s;
 }
+
 /*adding hover and focus to the field learned from https://learn.shayhowe.com/html-css/building-forms/*/
 .field-input:hover{
-  box-shadow: 5px 5px 5px 5px #8888
-
+  box-shadow: 5px 5px 5px 5px #8888;
+  transition-duration: 0.5s;
 }
 
 .field-input:focus{
   border: 2px solid rgb(142, 70, 25);
+  transition-duration: 0.5s;
 }
 
 
-/* 
+/*
   TEXT ELEMENTS -------------------
 */
 
@@ -183,7 +226,7 @@ section code {
 
 }
 
-/* 
+/*
   COMBINED ELEMENTS -------------------
 */
 
