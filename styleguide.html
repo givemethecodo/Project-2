@@ -36,6 +36,8 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <div class="container center-vertical ">
         <div class="block align-left">
           <h1>This is my H1</h1>
+          <p>Sample code:</p>
+          <code>&lt;h1&gt;This is my H1&lt;/h1&gt;</code>
         </div>
         <div class="block align-center">
           <p>64px, 4em</p>
@@ -44,6 +46,8 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <div class="container center-vertical">
         <div class="block">
           <h2>This is my H2</h2>
+          <p>Sample code:</p>
+          <code>&lt;h2&gt;This is my H2&lt;/h2&gt;</code>
         </div>
         <div class="block align-center">
           <p>32px, 2em</p>
@@ -52,6 +56,8 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <div class="container center-vertical">
         <div class="block">
           <h3>This is my H3</h3>
+          <p>Sample code:</p>
+          <code>&lt;h3&gt;This is my H3&lt;/h3&gt;</code>
         </div>
         <div class="block align-center">
           <p>24x, 1.5 em</p>
@@ -60,6 +66,8 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <div class="container center-vertical">
         <div class="block">
           <p>This is my body copy</p>
+          <p>Sample code:</p>
+          <code>&lt;p&gt;This is my body copy&lt;/p&gt;</code>
         </div>
         <div class="block align-center">
           <p>16px 1em</p>
@@ -80,26 +88,29 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <div class="container">
         <div class="block align-center">
           <h3>Primary Button</h3>
-          <h3>Sample code:</h3>
-          <code>&lt;button class="button button-primary"&gt;PRIMARY&lt;/button&gt;</code>
-          <h3>Rendered element:</h3>
           <button class="button button-primary">PRIMARY</button>
+          <p>Sample code:</p>
+          <code>&lt;button class="button button-primary"&gt;PRIMARY&lt;/button&gt;</code>
         </div>
         <div class="block align-center">
           <h3>Secondary Button</h3>
-          <h3>Sample code:</h3>
-          <code>&lt;button class="button button-secondary"&gt;SECONDARY&lt;/button&gt;</code>
-          <h3>Rendered element:</h3>
           <button class="button button-secondary">SECONDARY</button>
+          <p>Sample code:</p>
+          <code>&lt;button class="button button-secondary"&gt;SECONDARY&lt;/button&gt;</code>
         </div>
       </div>
     </section>
     <section class="style-guide-element">
       <h3 class="align-center">Navigation</h3>
       <ul class="nav">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="#styleguide.html">HOME</a></li>
+        <li><a href="#styleguide.html">ABOUT</a></li>
       </ul>
+      <p>Sample code:</p>
+      <code>&lt;ul class="nav"&gt;
+        <br>&lt;li&gt;&lt;a href="#styleguide.html"&gt;HOME&lt;/a&gt;&lt;/li&gt;
+        <br>&lt;li&gt;&lt;a href="#styleguide.html"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
+        <br>&lt;/ul&gt;</code>
     </section>
     <section class="style-guide-element">
       <!--referenced from w3 schools, in text links
@@ -108,6 +119,8 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <a href="http://www.fioravanti.eu/about" class="active-link">
         click on this it's an inline link
       </a>
+      <p>Sample code:</p>
+      <code>&lt;a href="http://www.fioravanti.eu/about" class="active-link"&gt;click on this it's an inline link&lt;/a&gt;</code>
     </section>
     <section class="style-guide-element">
       <!--referenced from w3 schools, image as a link
@@ -117,23 +130,34 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         <img src="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg"
              alt="this is an elephant" style="width:400px;height:250px;" class="image-as-link">
       </a>
+      <p>Sample code:</p>
+      <code>&lt;a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg"&gt;
+        <br>&lt;img src="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg"
+        <br>alt="this is an elephant" style="width:400px;height:250px;" class="image-as-link"
+        <br>&lt;/a&gt;
+      </code>
     </section>
     <section class="style-guide-element">
       <!--referenced from w3 schools, input field
       https://www.w3schools.com/html/html_form_input_types.asp-->
       <h3 class="align-center">Text Input Field</h3>
-      <label for="username">Username:</label></br>
+      <label for="username">Username:</label>
       <input type="text" id="username" class="field-input">
-
+      <p>Sample code:</p>
+      <code>&lt;label for="username"&gt;Username&lt;/label&gt;</code>
+      <code>&lt;input type="text" id="username" class="field-input"&gt;</code>
     </section>
     <section class="style-guide-element">
       <!--referenced from w3 schools, input field
       https://www.w3schools.com/html/html_form_input_types.asp-->
       <h3 class="align-center">Radio button input field</h3>
       <input class="radio" type="radio" id="black" name="radio-color">
-      <label class="radio" for="black">black</label></br>
+      <label class="radio" for="black">black</label>
       <input class="radio" type="radio" id="blue" name="radio-color">
-      <label class="radio" for="blue">blue</label></br>
+      <label class="radio" for="blue">blue</label>
+      <p>Sample code:</p>
+      <code>&lt;input class="radio" type="radio" id="black" name="radio-color"&gt;</code>
+      <code>&lt;label class="radio" for="black"&gt;black&lt;/label&gt;</code>
     </section>
   </section>
 
@@ -143,13 +167,16 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <!--referenced from w3 schools, paragraphs
       https://www.w3schools.com/html/html_paragraphs.asp-->
       <h2>Paragraphs</h2>
-      <p> This is a paragraph. It's very short but it could be long. I can write
+      <p>This is a paragraph. It's very short but it could be long. I can write
         so much here when I feel like it but right now I don't need to.
         Hello! Secondary editor of the Stylesheet here! I'm adding on
         to the paragraph because it's probably best for the pararaph to look like
         a paragraph. This is the paragraph text that will appear throughout the website.
         How do you like it? It will be heavily integrated within the website
         because everyone likes reading? Right? Right?</p>
+
+      <p>Sample code:</p>
+      <code>&lt;p&gt;This is a paragraph...&lt;/p&gt;</code>
     </section>
     <section class="style-guide-element">
       <!--referenced from w3 schools, unordered lists
@@ -160,6 +187,13 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         <li>Teracotta</li>
         <li>Ceramic</li>
       </ul>
+      <p>Sample code:</p>
+      <code>&lt;ul&gt;
+        <br>&lt;li&gt;Glass&lt;/li&gt;
+        <br>&lt;li&gt;Teracotta&lt;/li&gt;
+        <br>&lt;li&gt;Ceramic&lt;/li&gt;
+        <br>&lt;/ul&gt;
+      </code>
     </section>
     <section class="style-guide-element">
       <!--referenced from w3 schools, ordered lists
@@ -170,6 +204,13 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         <li>Teracotta</li>
         <li>Ceramic</li>
       </ol>
+      <p>Sample code:</p>
+      <code>&lt;ol&gt;
+        <br>&lt;li&gt;Glass&lt;/li&gt;
+        <br>&lt;li&gt;Teracotta&lt;/li&gt;
+        <br>&lt;li&gt;Ceramic&lt;/li&gt;
+        <br>&lt;/ol&gt;
+      </code>
     </section>
   </section>
 
