@@ -46,7 +46,7 @@ section:not([id]) {
 }
 
 section h3 {
-  margin-bottom: 0;
+  margin-bottom: 10px; /*it was 0 before, not sure why - erika */
 }
 /* adding 4 units of margin to the left and right (learned from inspecting the code and playing around with it) */
 /*section p {*/
@@ -61,6 +61,12 @@ section code {
 
 li {
   padding: 1em;
+}
+
+/* reference: https://stackoverflow.com/questions/2506844/how-do-i-make-a-transparent-border-with-css */
+img {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0);
+  border: 5px solid rgba(0, 0, 0, 0);
 }
 
 /* reference: https://www.geeksforgeeks.org/how-to-change-the-color-of-radio-buttons-using-css/ */
