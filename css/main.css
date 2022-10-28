@@ -7,6 +7,10 @@
    where I used them in the code down below.
 
 */
+nav {
+  position: fixed;
+  top: 0;
+}
 
 h1{
   font-family: inter;
