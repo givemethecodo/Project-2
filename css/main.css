@@ -29,13 +29,13 @@ h2{
 body {
   font-family: inter;
   font-size: 1em;
-  padding: 2rem;
+  min-height: 100vh;
 }
 
 /* adding space between section elements (learned from inspecting the code and playing around with it) */
 section {
   margin: 1em 0;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 section:not([id]) {
@@ -65,8 +65,30 @@ li {
 
 /* reference: https://stackoverflow.com/questions/2506844/how-do-i-make-a-transparent-border-with-css */
 img {
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0);
+  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0); */
   border: 5px solid rgba(0, 0, 0, 0);
+  border-radius: 0.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* padding: 3em; */
+  gap: 7em;
+  background-color: #CC9F6F;
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em 2em 5em 2em;
+  gap: 0.4em;
 }
 
 /* reference: https://www.geeksforgeeks.org/how-to-change-the-color-of-radio-buttons-using-css/ */
@@ -98,9 +120,10 @@ img {
 /* Styling + hover state for links and images learned from https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
 
 .image-as-link:hover, .image-as-link:focus {
-  box-shadow: 5px 5px 5px 5px #8888 ;
+  /* box-shadow: 5px 5px 5px 5px #8888 ; */
   border: 5px solid #987868;
   transition-duration: 0.5s;
+  border-radius: 0.5rem;
 }
 
 .active-link {
@@ -206,7 +229,8 @@ img {
 
 /*adding hover and focus to the field learned from https://learn.shayhowe.com/html-css/building-forms/*/
 .field-input:hover{
-  box-shadow: 5px 5px 5px 5px #8888;
+  /* box-shadow: 5px 5px 5px 5px #8888; */
+  border: 2px solid rgb(142, 70, 25);
   transition-duration: 0.5s;
 }
 
@@ -257,4 +281,16 @@ img {
 .block {
   flex-basis: 15em;
   flex-grow: 1;
+  /* display: flex;
+  flex-direction: column;
+  padding: 5em; */
+}
+
+.payment_info {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.payment input {
+  margin-bottom: 1em;
 }
