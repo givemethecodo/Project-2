@@ -8,8 +8,8 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
     <meta charset="utf-8">
     <title>Vessel | Style Guide</title>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
 
   </head>
 
@@ -22,8 +22,9 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <li><a href="#typography">Typography</a></li>
       <li><a href="#interactive_elements">Interactive Elements</a></li>
       <li><a href="#text_elements">Text Elements</a></li>
-      <li><a href="product_listing.html">Product Listing</a></li>
-      <li><a href="cart.html">Checkout Cart</a></li>
+      <li><a href="#product_listing">Product Listing</a></li>
+      <li><a href="#payment_form">Payment Form</a></li>
+      <li><a href="#checkout_cart">Checkout Cart</a></li>
     </ul>
 
     <!-- TYPOGRAPHY SECTION // -->
@@ -214,6 +215,116 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
     </section>
   </section>
 
+  <section id="product_listing" class="style-guide-category">
+    <h2>Product Listing</h2>
+    <div class="container">
+        <div class="block align-center">
+            <h3>Plisse vase</h3>
+            <p><strong>$175</strong></p>
+            <img src="../images/plisse.jpeg" alt="plisse vase" width="200" height="250" class="image-as-link">
+            <br>
+            <a href="/link to detailed description/" class="active-link">Link to detailed description </a>
+        </div>
+        <div class="block align-center">
+            <h3>Layer cake vase</h3>
+            <p><strong>$175</strong></p>
+            <img src="../images/layer cake.jpeg" alt="plisse vase" width="200" height="250" class="image-as-link">
+            <br>
+            <a href="/link to detailed description/" class="active-link">Link to detailed description </a>
+        </div>
+    </div>
+  </section>
+
+  <section id="payment_form" class="style-guide-category">
+    <!-- I added a focus and a hover state to the fields here :D -->
+    <h2>Payment Form</h2>
+    <div class="container border payment">
+
+      <div class="block payment_info">
+        <label for="debit">Debit Card</label>
+        <input class="radio" type="radio" id="debit" name="card" value="radio">
+        <label for="credit">Credit Card</label>
+        <input class="radio" type="radio" id="credit" name="card" value="radio">
+      </div>
+      <div class="block payment_info">
+        <h3>Contact Information</h3>
+        <label for="name_on_card">Name on card</label>
+        <input type="text" id="name_on_card" class="field-input" name="name_on_card" placeholder="John Doe">
+        <label for="card_number">Card Number</label>
+        <input type="text" id="card_number" class="field-input" name="card_number" placeholder="**** **** **** ****">
+        <label for="card_cvc">Security Number</label>
+        <input type="text" id="card_cvc" class="field-input" name="card_cvc" placeholder="CVC">
+        <label for="card_expiration">Expiration Date</label>
+        <input type="text" id="card_expiration" class="field-input" name="card_expiration" placeholder="MM / YY">
+        <!-- add email and/or phone number text inputs // -->
+        <label for="email">Email</label>
+        <input type="text" id="email" class="field-input" name="email" placeholder="jdoe@gmail.com">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" class="field-input" name="phone" placeholder="(123) 123 2345">
+      </div>
+      <div class="block payment_info">
+        <h3>Address Information</h3>
+        <!-- add address text input // -->
+        <label for="address1">Address Line 1</label>
+        <input type="text" id="address1" class="field-input" name="address1" placeholder="Street Address">
+        <label for="address2">Address Line 2</label>
+        <input type="text" id="address2" class="field-input" name="address2" placeholder="Street Address line 2 (optional)">
+        <label for="city">City</label>
+        <input type="text" id="city" class="field-input" name="city" placeholder="City">
+        <label for="postal_code">Postal Code</label>
+        <input type="text" id="postal_code" class="field-input" name="postal_code" placeholder="123 456">
+        <label for="prov_state">Province or State</label>
+        <input type="text" id="prov_state" class="field-input" name="prov_state" placeholder="AB">
+        <label for="country">Country</label>
+        <input type="text" id="country" class="field-input" name="country" placeholder="Country">
+      </div>
+      <div class="block">
+        <button type="submit" class="button button-primary" value="Submit">Submit</button>
+      </div>
+    </div>
+
+</section>
+
+<section id="checkout_cart" class="style-guide-category">
+    <h2>Checkout Cart</h2>
+
+    <div class="container">
+        <div class="block align-center">
+            <h3>Plisse vase</h3>
+            <p><strong>$175</strong></p>
+            <img src="../images/plisse.jpeg" alt="plisse vase" width="200" height="250" class="image-as-link"><br>
+            <a href="/link to detailed description/" class="active-link">Link to detailed description </a>
+        </div>
+        <div class="block align-center">
+            <h3>Layer cake vase</h3>
+            <p><strong>$175</strong></p>
+            <img src="../images/layer cake.jpeg" alt="plisse vase" width="200" height="250" class="image-as-link"><br>
+            <a href="/link to detailed description/" class="active-link">Link to detailed description </a>
+        </div>
+    </div>
+
+    <div class="container border">
+        <div class="block align-center">
+            <strong> SUBTOTAL: </strong> $350
+        </div>
+        <div class="block align-center">
+            <strong> SHIPPING: </strong> $10
+        </div>
+        <div class="block align-center">
+            <strong> TAXES: </strong> $45.66
+        </div>
+        <div class="block align-center">
+            <strong> TOTAL: </strong> $405.66
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="block align-center">
+            <button class="button button-primary">PURCHASE</button>
+        </div>
+    </div>
+  </section>
+
   <hr>
     <section>
       <h2>Branding ideas</h2>
@@ -224,14 +335,31 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         lifestyle they want to live. It's meant to enhance the quality of both their identity and their home.
 
         Keywords: organic, refined, minimalistic, brutalist
-
     </section>
     <section id="text_elements" class="style-guide-category">
       <h2> Original moodboard and Style Guide </h2>
       <section class="style-guide-element">
-        <img src="images/Frame_240.jpg" alt="styleguide" width="600" height="650" >
+        <img src="../images/Frame_240.jpg" alt="styleguide" width="600" height="650" >
       </section>
     </section>
+
+    <footer>
+      <div class="footer-column">
+        <h3>Support</h3>
+        <a href="#" class="active-link">Contact Us</a>
+      </div>
+      <div class="footer-column">
+        <h3>Follow</h3>
+        <a href="#" class="active-link">Company Updates</a>
+        <a href="#" class="active-link">Instagram</a>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <a href="styleguide.html" class="active-link">Style Guide</a>
+        <a href="https://github.com/givemethecodo/Project-2" class="active-link">Github</a>
+        <a href="citations.html" class="active-link">Citations</a>
+      </div>
+    </footer>
 
   </body>
 </html>
