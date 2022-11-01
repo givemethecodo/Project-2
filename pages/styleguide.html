@@ -42,7 +42,7 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
           <code>&lt;h1&gt;This is my H1&lt;/h1&gt;</code>
         </div>
         <div class="block align-center">
-          <p>64px, 4em</p>
+          <p>32px, 2em</p>
         </div>
       </div>
       <div class="container center-vertical">
@@ -52,18 +52,18 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
           <code>&lt;h2&gt;This is my H2&lt;/h2&gt;</code>
         </div>
         <div class="block align-center">
-          <p>32px, 2em</p>
+          <p>24px, 1.5em</p>
         </div>
       </div>
-      <!-- <div class="container center-vertical">
+      <div class="container center-vertical">
         <div class="block">
           <h3>This is my H3</h3>
           <p>Sample code:</p>
           <code>&lt;h3&gt;This is my H3&lt;/h3&gt;</code>
-        </div> -->
-        <!-- <div class="block align-center">
-          <p>24x, 1.5 em</p>
-        </div> -->
+        </div>
+        <div class="block align-center">
+          <p>16px, 1em</p>
+        </div>
       </div>
       <div class="container center-vertical">
         <div class="block">
@@ -72,7 +72,7 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
           <code>&lt;p&gt;This is my body copy&lt;/p&gt;</code>
         </div>
         <div class="block align-center">
-          <p>16px 1em</p>
+          <p>16px, 1em</p>
         </div>
       </div>
     </section>
@@ -341,10 +341,10 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         </div>
     </div> -->
 
-    <div class="CartContainer">
+    <div class="container">
       <div class="Header">
        	 <h3 class="Heading">Shopping Cart</h3>
-      	 <h5 class="Action">Remove all</h5>
+      	 <div class="remove active-link">Remove all</div>
       </div>
 
       <div class="Cart-Items">
@@ -352,8 +352,8 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
        	   <img src="../images/plisse.jpeg" style={{ height="120px" }} />
        	 </div>
        	 <div class="about">
-       	 	 <h1 class="title">Plisse vase</h1>
-       	 	 <h3 class="subtitle">250ml</h3>
+       	 	 <h3>Plisse vase</h3>
+       	 	 <p class="subtitle">250ml</p>
        	 </div>
        	 <div class="counter">
        	   <div class="btn">+</div>
@@ -362,8 +362,7 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
        	 </div>
        	 <div class="prices">
        	 	 <div class="amount">$2.99</div>
-       	   <div class="save"><u>Save for later</u></div>
-       	   <div class="remove"><u>Remove</u></div>
+       	   <div class="remove active-link">Remove</div>
        	 </div>
        </div>
        <div class="Cart-Items Pad">
@@ -371,30 +370,31 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         	   <img src="../images/layer cake.jpeg" style={{ height="120px" }} />
         	 </div>
         	 <div class="about">
-        	 	 <h1 class="title">Layer cake vasee</h1>
-        	 	 <h3 class="subtitle">250ml</h3>
+        	 	 <h3>Layer cake vase</h3>
+        	 	 <p class="subtitle">250ml</p>
         	 </div>
         	 <div class="counter">
         	   <div class="btn">+</div>
         	 	 <div class="count">2</div>
+
         	 	 <div class="btn">-</div>
         	 </div>
         	 <div class="prices">
         	 	 <div class="amount">$2.99</div>
-        	   <div class="save"><u>Save for later</u></div>
-        	   <div class="remove"><u>Remove</u></div>
+        	   <div class="remove active-link">Remove</div>
         	 </div>
         </div>
         <hr>
-   	    <div class="checkout">
-   	      <div class="total">
-       	 	  <div>
-       	 		  <div class="Subtotal">Sub-Total</div>
-       	 		  <div class="items">2 items</div>
-       	 	  </div>
-   	 	      <div class="total-amount">$6.18</div>
-   	      </div>
-   	 <button class="button">Checkout</button></div>
+        <div class="checkout">
+          <div class="total">
+            <div>
+              <div class="amount">Total</div>
+              <p>2 items</p>
+            </div>
+            <div class="amount">$6.18</div>
+          </div>
+          <button class="button button-secondary">Checkout</button>
+       </div>
    </div>
 
   </section>
