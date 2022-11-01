@@ -1,15 +1,24 @@
 @font-face {
-    font-family: inter;
-    font-weight: 200;
-    font-style: normal;
+    font-family: inter-semibold;
+    /* font-weight: 200; */
+    /* font-style: bold; */
+    /* I fixed the file import issue */
+    src: url(../fonts/Inter-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: inter-regular;
+    /* font-weight: 200; */
+    /* font-style: bold; */
     /* I fixed the file import issue */
     src: url(../fonts/Inter-Regular.ttf);
   }
-  
 /* I learned how to import new fonts from https://www.youtube.com/watch?v=Hwq_Mr12bcI */
   /* @font-face {
-    font-family: inter;
-    font-weight: 200;
+    font-family: 'Inter';
     font-style: normal;
+    /* font-weight: 700; 
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
     src: url(../fonts/Inter-SemiBold.ttf);
   } */
