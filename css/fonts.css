@@ -1,15 +1,8 @@
 @font-face {
-    font-family: inter;
-    font-weight: 200;
-    font-style: normal;
-    /* I fixed the file import issue */
+    font-family: inter-semibold;
+    src: url(../fonts/Inter-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: inter-regular;
     src: url(../fonts/Inter-Regular.ttf);
   }
-  
-/* I learned how to import new fonts from https://www.youtube.com/watch?v=Hwq_Mr12bcI */
-  /* @font-face {
-    font-family: inter;
-    font-weight: 200;
-    font-style: normal;
-    src: url(../fonts/Inter-SemiBold.ttf);
-  } */

@@ -13,21 +13,31 @@ nav {
 }
 
 h1{
-  font-family: inter;
-  font-size: 3em;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-family: 'inter-semibold';
+
+font-size: 32px;
+line-height: 39px;
+letter-spacing: -0.75px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #000000;
 }
 
 h2{
-  font-family: inter;
-  font-size: 2em;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-family: 'inter-semibold';
+
+font-size: 1em;
+line-height: 19px;
+text-transform: uppercase;
+letter-spacing: -0.75px;
+
+color: #000000;
 }
 
 body {
-  font-family: inter;
+  font-family: 'inter-regular';
   font-size: 1em;
   min-height: 100vh;
 }
@@ -67,7 +77,7 @@ li {
 img {
   /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0); */
   border: 5px solid rgba(0, 0, 0, 0);
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
 }
 
 footer {
@@ -123,7 +133,7 @@ footer {
   /* box-shadow: 5px 5px 5px 5px #8888 ; */
   border: 5px solid #987868;
   transition-duration: 0.5s;
-  border-radius: 0.5rem;
+
 }
 
 .active-link {
@@ -191,35 +201,41 @@ footer {
 
 /*button styling learned from: https://www.w3schools.com/css/css3_buttons.asp*/
 .button {
-  border: none;
-  padding: 15px 32px;
+  box border: black;
+  gap: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
 }
 
 .button-primary {
-  background-color: #c5996a;
-  color: #0e0e0e;
+  background: #CC9F6F;
+border: 1px solid #000000;
+padding: 14px 170px;
 }
 
 .button-primary:hover, .button-primary:focus {
-  background-color: #e2ae76;
+  background: #9C7A55;
+border: 1.5px solid #000000
   transition-duration: 0.5s;
 }
 
 .button-secondary {
   background-color: white;
-  border:2px solid #c5996a;
-  color: #9d7a55;
+  border: 1.5px solid #000000;
+  padding: 14px 142px;
+gap: 10px;
+  
 }
 
 .button-secondary:hover, .button-secondary:focus {
   background-color: #c5996a;
   color: white;
   transition-duration: 0.5s;
+  background: #000000;
+border: 1.5px solid #000000;
 }
 
 .button-nav:hover, .button-nav:focus {
@@ -257,7 +273,10 @@ footer {
 
 .align-left{
   text-align: left;
+}
 
+.align-right{
+  text-align: right;
 }
 
 /*
@@ -285,6 +304,30 @@ footer {
   flex-direction: column;
   padding: 5em; */
 }
+
+.column {
+  flex-basis: 15em;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5em;
+}
+.image-link-container {
+  padding:0em;
+  align-items: center;
+}
+.image-link-column {
+width: 300px;
+}
+.image-link-block {
+  flex-grow: 1;
+}
+
+.image-link-border {
+  border: 5px solid #CC9F6F;
+  
+ 
+} 
 
 .payment_info {
   display: inline-flex;

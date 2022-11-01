@@ -25,6 +25,7 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <li><a href="#product_listing">Product Listing</a></li>
       <li><a href="#payment_form">Payment Form</a></li>
       <li><a href="#checkout_cart">Checkout Cart</a></li>
+      <li><a href="#contact_form">Contact Form</a></li>
     </ul>
 
     <!-- TYPOGRAPHY SECTION // -->
@@ -127,10 +128,26 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <!--referenced from w3 schools, image as a link
       https://www.w3schools.com/html/html_images.asp#gsc.tab=0-->
       <h3 class="align-center">Image as a link</h3>
-      <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
-        <img src="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg"
-             alt="this is an elephant" style="width:400px;height:250px;" class="image-as-link">
-      </a>
+      <div class = "column image-link-column" >
+        <div class = "image-link-block" >
+          <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
+            <img src="../Images/test.png"
+                 alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;" class="image-as-link">
+          </a>
+
+        </div>
+        <div class = " container image-link-container" >
+          <div class = "image-link-block align-left">
+            <h2>The Plissé</h2>
+          </div>
+          <div class = "image-link-block align-right">
+            <body>$75.00</body>
+          </div>
+        </div>
+        <div class = "image-link-block" >
+          <body>Vase</body> </div>
+      </div>
+      
       <p>Sample code:</p>
       <code>&lt;a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg"&gt;
         <br>&lt;img src="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg"
@@ -182,7 +199,7 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
     <section class="style-guide-element">
       <!--referenced from w3 schools, unordered lists
       https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered-->
-      <h2>Bulleted Lists</h2>
+      <!-- <h2>Bulleted Lists</h2>
       <ul>
         <li>Glass</li>
         <li>Teracotta</li>
@@ -195,11 +212,11 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         <br>&lt;li&gt;Ceramic&lt;/li&gt;
         <br>&lt;/ul&gt;
       </code>
-    </section>
-    <section class="style-guide-element">
+    </section> -->
+    <!-- <section class="style-guide-element">
       <!--referenced from w3 schools, ordered lists
       https://www.w3schools.com/html/html_lists.asp-->
-      <h2>Numbered Lists</h2>
+      <!-- <h2>Numbered Lists</h2>
       <ol>
         <li>Glass</li>
         <li>Teracotta</li>
@@ -213,7 +230,7 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         <br>&lt;/ol&gt;
       </code>
     </section>
-  </section>
+  </section> --> -->
 
   <section id="product_listing" class="style-guide-category">
     <h2>Product Listing</h2>
@@ -324,6 +341,31 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         </div>
     </div>
   </section>
+
+  <section id= contact_form class="style-guide-category">
+    <h2>Checkout Cart</h2>
+    <h3>Contact us</h3>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="button button-primary">SUBMIT</button>
+
+  </section>
+
 
   <hr>
     <section>
