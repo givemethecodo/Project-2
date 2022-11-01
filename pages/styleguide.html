@@ -254,10 +254,56 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
 
   <section id="payment_form" class="style-guide-category">
     <!-- I added a focus and a hover state to the fields here :D -->
-    <h2>Payment Form</h2>
-    <div class="container border payment">
-
-      <div class="block payment_info">
+    <h1>Payment Form</h1>
+    <div class="container border">
+      <div class=".checkout-form-containerr">
+        <h2>Shipping Address</h2>
+        <p>Please enter your shipping details.</p>
+        <checkout-form-hr />
+        <div class="checkout-form">
+          
+        <div class="fields fields--2">
+          <label class="checkout-form-field">
+            <span class="checkout-form-field-label" for="firstname">First name</span>
+            <input class="checkout-form-field-input" type="text" id="firstname" value="John" />
+          </label>
+          <label class="checkout-form-field">
+            <span class="checkout-form-field-label" for="lastname">Last name</span>
+            <input class="checkout-form-field-input" type="text" id="lastname" value="Doe" />
+          </label>
+        </div>
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="address">Address</span>
+          <input class="checkout-form-field-input" type="text" id="address" />
+        </label>
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="country">Country</span>
+          <select class="checkout-form-field-input" id="country">
+            <option value=""></option>
+            <option value="canada">Canada</option>
+          </select>
+        </label>
+        <div class="fields fields--3">
+          <label class="checkout-form-field">
+            <span class="checkout-form-field-label" for="postalcode">Postal code</span>
+            <input class="checkout-form-field-input" type="text" id="zipcode" />
+          </label>
+          <label class="checkout-form-field ">
+            <span class="checkout-form-field-label" for="city">City</span>
+            <input class="checkout-form-field-input" type="text" id="city" />
+          </label>
+          <label class="checkout-form-field ">
+            <span class="checkout-form-field-label" for="province">Province</span>
+            <select class="checkout-form-field-input" id="province">
+              <option value="british columbia">British Columbia</option>
+            </select>
+          </label>
+        </div>
+        </div>
+        <checkout-form-hr>
+        <button class="button button-primary button-checkout">Continue</button>
+      </div>
+      <!-- <div class="block payment_info">
         <label for="debit">Debit Card</label>
         <input class="radio" type="radio" id="debit" name="card" value="radio">
         <label for="credit">Credit Card</label>
@@ -273,15 +319,15 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         <input type="text" id="card_cvc" class="field-input" name="card_cvc" placeholder="CVC">
         <label for="card_expiration">Expiration Date</label>
         <input type="text" id="card_expiration" class="field-input" name="card_expiration" placeholder="MM / YY">
-        <!-- add email and/or phone number text inputs // -->
-        <label for="email">Email</label>
+         <!--add email and/or phone number text inputs // -->
+        <!-- <label for="email">Email</label>
         <input type="text" id="email" class="field-input" name="email" placeholder="jdoe@gmail.com">
         <label for="phone">Phone Number</label>
         <input type="text" id="phone" class="field-input" name="phone" placeholder="(123) 123 2345">
       </div>
       <div class="block payment_info">
         <h3>Address Information</h3>
-        <!-- add address text input // -->
+        add address text input //
         <label for="address1">Address Line 1</label>
         <input type="text" id="address1" class="field-input" name="address1" placeholder="Street Address">
         <label for="address2">Address Line 2</label>
@@ -298,7 +344,7 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
       <div class="block">
         <button type="submit" class="button button-primary" value="Submit">Submit</button>
       </div>
-    </div>
+    </div> --> 
 
 </section>
 
