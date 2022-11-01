@@ -216,21 +216,25 @@ footer {
 
 .button-primary {
   background: #CC9F6F;
-border: 1px solid #000000;
+border: 1.5px solid #000000;
 padding: 14px 170px;
 }
 
 .button-primary:hover, .button-primary:focus {
   background: #9C7A55;
-border: 1.5px solid #000000
-  transition-duration: 0.5s;
+border: 1.5px solid #000000;
+transition-duration: 0.5s;
 }
 
+.button-checkout {
+  padding: 14px 50px;
+}
 .button-secondary {
   background-color: white;
   border: 1.5px solid #000000;
-  padding: 14px 142px;
-  gap: 10px;
+  padding: 14px 50px;
+gap: 10px;
+
 }
 
 .button-secondary:hover, .button-secondary:focus {
@@ -449,3 +453,23 @@ hr{
 	display: flex;
 	justify-content: space-between;
 }
+.Subtotal{
+	font-size: 22px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #202020;
+}
+.items{
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 500;
+	color: #909090;
+	line-height: 10px;
+}
+.total-amount{
+	font-size: 36px;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+}
+
