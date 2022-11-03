@@ -14,30 +14,26 @@ nav {
 
 h1{
   font-family: 'inter-semibold';
-  font-size: 2em;
-  line-height: 39px;
-  letter-spacing: -0.75px;
-  /* identical to box height */
-  text-transform: uppercase;
-  color: #000000;
+
+font-size: 32px;
+line-height: 39px;
+letter-spacing: -0.75px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #000000;
 }
 
-h2 {
+h2{
   font-family: 'inter-semibold';
-  font-size: 1.5em;
-  line-height: 19px;
-  text-transform: uppercase;
-  letter-spacing: -0.75px;
-  color: #000000;
-}
 
-h3 {
-  font-family: 'inter-regular';
-  font-size: 1em;
-  line-height: 19px;
-  text-transform: none;
-  letter-spacing: -0.75px;
-  color: #000000;
+font-size: 1em;
+line-height: 19px;
+text-transform: uppercase;
+letter-spacing: -0.75px;
+
+color: #000000;
 }
 
 body {
@@ -242,7 +238,7 @@ gap: 10px;
   color: white;
   transition-duration: 0.5s;
   background: #000000;
-  border: 1.5px solid #000000;
+border: 1.5px solid #000000;
 }
 
 .button-nav:hover, .button-nav:focus {
@@ -304,7 +300,6 @@ gap: 10px;
   padding: 2em;
 }
 
-
 .block {
   flex-basis: 15em;
   flex-grow: 1;
@@ -333,13 +328,7 @@ width: 300px;
 
 .image-link-border {
   border: 5px solid #CC9F6F;
-<<<<<<< HEAD
 } 
-=======
-
-
-}
->>>>>>> erika_2022-11-01_generaledits
 
 .payment_info {
   display: inline-flex;
@@ -351,6 +340,13 @@ width: 300px;
 }
 
 /* okay so after here is to be super edited */
+.CartContainer{
+	width: 70%;
+	height: 90%;
+	background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #1687d933;
+}
 
 .Header{
 	margin: auto;
@@ -361,6 +357,12 @@ width: 300px;
 	align-items: center;
 }
 
+.Heading{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #2F3841;
+}
 
 .Action{
 	font-size: 14px;
@@ -379,7 +381,6 @@ width: 300px;
 	justify-content: space-between;
 	align-items: center;
 }
-
 .image-box{
 	width: 15%;
 	text-align: center;
@@ -388,6 +389,22 @@ width: 300px;
 	height: 100%;
 	width: 24%;
 }
+.title{
+	padding-top: 10px;
+	line-height: 10px;
+	font-size: 32px;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #202020;
+}
+.subtitle{
+	line-height: 10px;
+	font-size: 18px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #909090;
+}
+
 .counter{
 	width: 15%;
 	display: flex;
@@ -395,8 +412,9 @@ width: 300px;
 	align-items: center;
 }
 .btn{
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
 	background-color: #d9d9d9;
 	display: flex;
 	justify-content: center;
@@ -409,6 +427,7 @@ width: 300px;
 }
 .count{
 	font-size: 20px;
+	font-family: 'Open Sans';
 	font-weight: 600;
 	color: #202020;
 }
@@ -420,16 +439,25 @@ width: 300px;
 .amount{
 	padding-top: 20px;
 	font-size: 26px;
+	font-family: 'Open Sans';
 	font-weight: 800;
 	color: #202020;
 }
-
+.save{
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #1687d9;
+	cursor: pointer;
+}
 .remove{
 	padding-top: 5px;
-	font-size: 0.8em;
-	color: teal;
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #E44C4C;
 	cursor: pointer;
-  text-decoration: underline;
 }
 
 .pad{
@@ -441,13 +469,11 @@ hr{
 	float: right;
 	margin-right: 5%;
 }
-
 .checkout{
-	margin-left: auto;
+	float: right;
+	margin-right: 5%;
 	width: 28%;
-  padding: 2em 2em 2em 0;
 }
-
 .total{
 	width: 100%;
 	display: flex;
