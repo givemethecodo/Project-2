@@ -316,7 +316,7 @@ border: 1.5px solid #000000;
   padding: 5em;
 }
 .image-link-container {
-  padding:0em;
+  padding:top 0em;
   align-items: center;
 }
 .image-link-column {
@@ -328,11 +328,6 @@ width: 300px;
 
 .image-link-border {
   border: 5px solid #CC9F6F;
-<<<<<<< HEAD
-}
-=======
-
-
 }
 
 .payment_info {
@@ -342,6 +337,18 @@ width: 300px;
 
 .payment input {
   margin-bottom: 1em;
+}
+
+.container-product-listing{
+  padding: top 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.column-product-listing {
+  flex-basis: 15em;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* okay so after here is to be super edited */
