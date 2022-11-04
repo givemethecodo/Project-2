@@ -334,12 +334,11 @@ width: 300px;
 .image-link-border {
   border: 5px solid #CC9F6F;
 <<<<<<< HEAD
-} 
+}
 =======
 
 
 }
->>>>>>> erika_2022-11-01_generaledits
 
 .payment_info {
   display: inline-flex;
@@ -472,7 +471,7 @@ hr{
 	font-weight: 900;
 	color: #202020;
 }
-/*checkout form-- address*/ 
+/*checkout form-- address*/
 
 /* :root {
   --color-gray: #737888;
@@ -558,5 +557,3 @@ hr{
   cursor: pointer;
   outline: 0;
 }
-
-
