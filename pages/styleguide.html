@@ -256,7 +256,7 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
     <!-- inspo taken from https://codepen.io/stephan281094/pen/XQRpQm -->
     <h1>Payment Form</h1>
     <div class="container border">
-      <div class=".checkout-form-containerr">
+      <div class=".checkout-form-container">
         <h2>Shipping Address</h2>
         <p>Please enter your shipping details.</p>
         <checkout-form-hr />
@@ -298,6 +298,40 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
               <option value="british columbia">British Columbia</option>
             </select>
           </label>
+        </div>
+        </div>
+        <checkout-form-hr>
+
+      </div>
+      <!-- payment form-->
+      <div class=".checkout-form-container">
+        <h2>Payment</h2>
+        <p>Please enter your your payment details.</p>
+       
+      <input class="radio" type="radio" id="Visa" name="radio-color">
+      <label class="radio" for="Visa">Visa</label>
+      <input class="radio" type="radio" id="Mastercard" name="radio-color">
+      <label class="radio" for="Mastercard">Mastercard</label>
+      <checkout-form-hr />
+        <div class="checkout-form">
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="Card Number">Card Number</span>
+          <input class="checkout-form-field-input" type="text" id="Card Number" />
+        </label>
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="Cardholder Name">Cardholder Name</span>
+          <input class="checkout-form-field-input" type="text" id="address" />
+        </label>
+        <div class="fields fields--3">
+          <label class="checkout-form-field">
+            <span class="checkout-form-field-label" for="Expiration date">Expiration Date MM/YY</span>
+            <input class="checkout-form-field-input" type="text" id="Expiration date" />
+          </label>
+          <div class="fields fields--3">
+            <label class="checkout-form-field">
+              <span class="checkout-form-field-label" for="Security Code">Security Code</span>
+              <input class="checkout-form-field-input" type="text" id="Security Code" />
+            </label>
         </div>
         </div>
         <checkout-form-hr>
