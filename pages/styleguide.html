@@ -253,10 +253,10 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
   </section>
 
   <section id="payment_form" class="style-guide-category">
-    <!-- I added a focus and a hover state to the fields here :D -->
+    <!-- inspo taken from https://codepen.io/stephan281094/pen/XQRpQm -->
     <h1>Payment Form</h1>
     <div class="container border">
-      <div class=".checkout-form-containerr">
+      <div class=".checkout-form-container">
         <h2>Shipping Address</h2>
         <p>Please enter your shipping details.</p>
         <checkout-form-hr />
@@ -265,11 +265,11 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         <div class="fields fields--2">
           <label class="checkout-form-field">
             <span class="checkout-form-field-label" for="firstname">First name</span>
-            <input class="checkout-form-field-input" type="text" id="firstname" value="John" />
+            <input class="checkout-form-field-input" type="text" id="firstname"  />
           </label>
           <label class="checkout-form-field">
             <span class="checkout-form-field-label" for="lastname">Last name</span>
-            <input class="checkout-form-field-input" type="text" id="lastname" value="Doe" />
+            <input class="checkout-form-field-input" type="text" id="lastname"  />
           </label>
         </div>
         <label class="checkout-form-field">
@@ -301,7 +301,41 @@ Brown vase: https://static.smallable.com/1104149-720x720q80/glass-vase.jpg-->
         </div>
         </div>
         <checkout-form-hr>
-        <button class="button button-primary button-checkout">Continue</button>
+
+      </div>
+      <!-- payment form-->
+      <div class=".checkout-form-container">
+        <h2>Payment</h2>
+        <p>Please enter your your payment details.</p>
+       
+      <input class="radio" type="radio" id="Visa" name="radio-color">
+      <label class="radio" for="Visa">Visa</label>
+      <input class="radio" type="radio" id="Mastercard" name="radio-color">
+      <label class="radio" for="Mastercard">Mastercard</label>
+      <checkout-form-hr />
+        <div class="checkout-form">
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="Card Number">Card Number</span>
+          <input class="checkout-form-field-input" type="text" id="Card Number" />
+        </label>
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="Cardholder Name">Cardholder Name</span>
+          <input class="checkout-form-field-input" type="text" id="address" />
+        </label>
+        <div class="fields fields--3">
+          <label class="checkout-form-field">
+            <span class="checkout-form-field-label" for="Expiration date">Expiration Date MM/YY</span>
+            <input class="checkout-form-field-input" type="text" id="Expiration date" />
+          </label>
+          <div class="fields fields--3">
+            <label class="checkout-form-field">
+              <span class="checkout-form-field-label" for="Security Code">Security Code</span>
+              <input class="checkout-form-field-input" type="text" id="Security Code" />
+            </label>
+        </div>
+        </div>
+        <checkout-form-hr>
+        <button class="button button-primary button-checkout">Pay Now</button>
       </div>
       <!-- <div class="block payment_info">
         <label for="debit">Debit Card</label>
