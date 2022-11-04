@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Vessel | About</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+
+  </head>
+
+<body>
+
+<div class="container border">
+    <div class=".checkout-form-container">
+      <h2>Shipping Address</h2>
+      <p>Please enter your shipping details.</p>
+      <checkout-form-hr />
+      <div class="checkout-form">
+        
+      <div class="fields fields--2">
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="firstname">First name</span>
+          <input class="checkout-form-field-input" type="text" id="firstname"  />
+        </label>
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="lastname">Last name</span>
+          <input class="checkout-form-field-input" type="text" id="lastname"  />
+        </label>
+      </div>
+      <label class="checkout-form-field">
+        <span class="checkout-form-field-label" for="address">Address</span>
+        <input class="checkout-form-field-input" type="text" id="address" />
+      </label>
+      <label class="checkout-form-field">
+        <span class="checkout-form-field-label" for="country">Country</span>
+        <select class="checkout-form-field-input" id="country">
+          <option value=""></option>
+          <option value="canada">Canada</option>
+        </select>
+      </label>
+      <div class="fields fields--3">
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="postalcode">Postal code</span>
+          <input class="checkout-form-field-input" type="text" id="zipcode" />
+        </label>
+        <label class="checkout-form-field ">
+          <span class="checkout-form-field-label" for="city">City</span>
+          <input class="checkout-form-field-input" type="text" id="city" />
+        </label>
+        <label class="checkout-form-field ">
+          <span class="checkout-form-field-label" for="province">Province</span>
+          <select class="checkout-form-field-input" id="province">
+            <option value=""></option>
+            <option value="british columbia">British Columbia</option>
+            <option value="Alberta">Alberta</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="Ontario">Ontario</option>
+                <option value="Quebec">Quebec</option>
+            <option value="New Brunswich">New Brunswick</option>
+            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+          </select>
+        </label>
+      </div>
+      </div>
+      <checkout-form-hr>
+
+    </div>
+    <!-- payment form-->
+    <div class=".checkout-form-container">
+      <h2>Payment</h2>
+      <p>Please enter your your payment details.</p>
+     
+    <input class="radio" type="radio" id="Visa" name="radio-color">
+    <label class="radio" for="Visa">Visa</label>
+    <input class="radio" type="radio" id="Mastercard" name="radio-color">
+    <label class="radio" for="Mastercard">Mastercard</label>
+    <checkout-form-hr />
+      <div class="checkout-form">
+      <label class="checkout-form-field">
+        <span class="checkout-form-field-label" for="Card Number">Card Number</span>
+        <input class="checkout-form-field-input" type="text" id="Card Number" />
+      </label>
+      <label class="checkout-form-field">
+        <span class="checkout-form-field-label" for="Cardholder Name">Cardholder Name</span>
+        <input class="checkout-form-field-input" type="text" id="address" />
+      </label>
+      <div class="fields fields--3">
+        <label class="checkout-form-field">
+          <span class="checkout-form-field-label" for="Expiration date">Expiration Date MM/YY</span>
+          <input class="checkout-form-field-input" type="text" id="Expiration date" />
+        </label>
+        <div class="fields fields--3">
+          <label class="checkout-form-field">
+            <span class="checkout-form-field-label" for="Security Code">Security Code</span>
+            <input class="checkout-form-field-input" type="text" id="Security Code" />
+          </label>
+      </div>
+      </div>
+      <checkout-form-hr>
+      <button class="button button-primary button-checkout">Pay Now</button>
+    </div>
+</body>
