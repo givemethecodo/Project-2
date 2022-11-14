@@ -550,6 +550,7 @@ hr{
 	font-weight: 900;
 	color: #202020;
 }
+/*here is all the stuff for the checkout.html page*/
 .checkout-form-hr {
   height: 1px;
   width: 100%;
@@ -628,4 +629,16 @@ hr{
   border: 0;
   cursor: pointer;
   outline: 0;
+}
+
+/*positioning for the confirmation page*/
+.confirmation-center{
+  margin: top 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.confirmation-column{
+  display:flex;
+  flex-direction: column;
 }
