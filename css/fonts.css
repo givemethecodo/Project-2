@@ -1,8 +1,15 @@
 @font-face {
     font-family: inter-semibold;
     src: url(../fonts/Inter-SemiBold.ttf);
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: inter-regular;
     src: url(../fonts/Inter-Regular.ttf);
-  }
+}
+
+@font-face {
+    font-family: poynter-bold;
+    src: url(../fonts/PoynterTextBold.ttf);
+}
+
