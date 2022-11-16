@@ -5,7 +5,31 @@
     <title>Vessel | Product Listing</title>
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../scripts/main.js"></script>
+    <script>
+    <!--  learned this here:  https://stackoverflow.com/questions/9186346/javascript-onclick-increment-number -->
+    function incrementValue()
+    {
+    var value = parseInt(document.getElementById('product_qty').innerHTML, 10);
+    console.log(value);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('product_qty').innerHTML = value;
+    }
+
+    function decreaseValue()
+    {
+    var value = parseInt(document.getElementById('product_qty').innerHTML, 10);
+    value = isNaN(value) ? 0 : value;
+    value--;
+    document.getElementById('product_qty').innerHTML = value;
+    }
+
+
+
+
+    </script>
 </head>
 <body>
 <div class="body-container">
@@ -16,27 +40,103 @@
         <a class="nav-links" href="cart.html">Checkout Cart</a>
     </div>
     <div class="body-main">
-
-        <div style="display:flex; justify-content: space-around; width: 100%;">
-            <div style="flex-grow:1;">
-                <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
-                    <img src="../images/test.png"
-                         alt="vase"
-                         class="image-as-link">
-                </a>
-            </div>
-            <div style="display:flex; width:33%; flex-direction: column;">
-                <div style="display:flex;justify-content: space-between">
-                    <h3>The Plissé Glass Vase</h3>
-                    <h3>75$</h3>
+        <div class="pl-main-group">
+            <img src="../Images/test.png">
+            <div class="pl-info-group">
+                <div class="pl-title-group">
+                    <h1>The Plissé Glass Vase</h1>
+                    <h2>75$</h2>
                 </div>
-                <div style="display:flex;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
                     mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
                     interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
                     aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
-                    auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
+                    auctor purus luctus enim egestas, ac scelerisque ante pulvinar.</p>
+
+                <h3>Quantity</h3>
+                <div class="counter">
+                    <div class="btn" onclick="decreaseValue()">-</div>
+                    <div class="count" id="product_qty">1</div>
+                    <div class="btn" onclick="incrementValue()">+</div>
                 </div>
+                <a href="cart.html">
+                    <button class="button button-primary">
+                        ADD TO CART
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="pl-reviews">
+            <h1>Customer Reviews</h1>
+            <h2>Top Reviews</h2>
+            <div class="pl-reviews-top-row">
+                <div class="pl-reviews-top-review">
+                    <div class="pl-reviews-top-title-group">
+                        <h4>"I hated it!"</h4>
+                        <div class="pl-reviews-star-group">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+                        auctor purus luctus enim egestas, ac scelerisque ante pulvinar.</p>
+                </div>
+                <div class="pl-reviews-top-review">
+                    <div class="pl-reviews-top-title-group">
+                        <h4>"I loved it!"</h4>
+                        <div class="pl-reviews-star-group">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+                        auctor purus luctus enim egestas, ac scelerisque ante pulvinar.</p>
+                </div>
+                <div class="pl-reviews-top-review">
+                    <div class="pl-reviews-top-title-group">
+                        <h4>"meh!"</h4>
+                        <div class="pl-reviews-star-group">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+                        auctor purus luctus enim egestas, ac scelerisque ante pulvinar.</p>
+                </div>
+            </div>
+            <div class="pl-reviews-leave">
+                <h1>Leave a Review</h1>
+                <div class="fields">
+                    <label class="checkout-form-field">
+                        <span class="checkout-form-field-label">Title</span>
+                        <input class="checkout-form-field-input" type="text"/>
+                    </label>
+                </div>
+                <div class="fields">
+                    <label class="checkout-form-field pl-reviews-leave-review">
+                        <span class="checkout-form-field-label">Review</span>
+                        <input class="checkout-form-field-input" type="text"/>
+                    </label>
+                </div>
+                <button class="button button-primary">SUBMIT</button>
             </div>
         </div>
     </div>
@@ -58,135 +158,5 @@
         </div>
     </footer>
 </div>
-<section class="set-of-3">
-    <div class="column image-link-column">
-        <div class="image-link-block">
-            <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
-                <img src="../images/test.png"
-                     alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;"
-                     class="image-as-link">
-            </a>
-        </div>
-        <div class=" container image-link-container">
-            <div class="image-link-block align-left">
-                <h2>The Plissé</h2>
-            </div>
-            <div class="image-link-block align-right">
-                <body>$75.00</body>
-            </div>
-        </div>
-        <div class="image-link-block">
-            <body>Vase</body>
-        </div>
-    </div>
-
-    <div class="column image-link-column">
-        <div class="image-link-block">
-            <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
-                <img src="../images/test.png"
-                     alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;"
-                     class="image-as-link">
-            </a>
-        </div>
-        <div class=" container image-link-container">
-            <div class="image-link-block align-left">
-                <h2>The Plissé</h2>
-            </div>
-            <div class="image-link-block align-right">
-                <body>$75.00</body>
-            </div>
-        </div>
-        <div class="image-link-block">
-            <body>Vase</body>
-        </div>
-    </div>
-
-    <div class="column image-link-column">
-        <div class="image-link-block">
-            <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
-                <img src="../images/test.png"
-                     alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;"
-                     class="image-as-link">
-            </a>
-        </div>
-        <div class=" container image-link-container">
-            <div class="image-link-block align-left">
-                <h2>The Plissé</h2>
-            </div>
-            <div class="image-link-block align-right">
-                <body>$75.00</body>
-            </div>
-        </div>
-        <div class="image-link-block">
-            <body>Vase</body>
-        </div>
-    </div>
-</section>
-
-<section class="set-of-3">
-    <div class="column image-link-column">
-        <div class="image-link-block">
-            <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
-                <img src="../images/test.png"
-                     alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;"
-                     class="image-as-link">
-            </a>
-        </div>
-        <div class=" container image-link-container">
-            <div class="image-link-block align-left">
-                <h2>The Plissé</h2>
-            </div>
-            <div class="image-link-block align-right">
-                <body>$75.00</body>
-            </div>
-        </div>
-        <div class="image-link-block">
-            <body>Vase</body>
-        </div>
-    </div>
-
-    <div class="column image-link-column">
-        <div class="image-link-block">
-            <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
-                <img src="../images/test.png"
-                     alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;"
-                     class="image-as-link">
-            </a>
-        </div>
-        <div class=" container image-link-container">
-            <div class="image-link-block align-left">
-                <h2>The Plissé</h2>
-            </div>
-            <div class="image-link-block align-right">
-                <body>$75.00</body>
-            </div>
-        </div>
-        <div class="image-link-block">
-            <body>Vase</body>
-        </div>
-    </div>
-
-    <div class="column image-link-column">
-        <div class="image-link-block">
-            <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
-                <img src="../images/test.png"
-                     alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;"
-                     class="image-as-link">
-            </a>
-        </div>
-        <div class=" container image-link-container">
-            <div class="image-link-block align-left">
-                <h2>The Plissé</h2>
-            </div>
-            <div class="image-link-block align-right">
-                <body>$75.00</body>
-            </div>
-        </div>
-        <div class="image-link-block">
-            <body>Vase</body>
-        </div>
-    </div>
-</section>
-
 </body>
 </html>

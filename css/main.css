@@ -696,3 +696,139 @@ hr {
     flex-grow: 1;
     padding: 5em;
 }
+
+.pl-main-group {
+    display: flex;
+    flex-direction: row;
+    /*background: #39C7AD;*/
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.pl-main-group img {
+    flex-grow: 1;
+    max-width: 35em;
+    padding-right: 10%;
+}
+
+.pl-info-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 20em;
+}
+
+.pl-info-group .counter {
+    width: 50%;
+}
+
+.pl-info-group h3 {
+    margin-top: 2em;
+
+    font-family: 'inter-bold';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.pl-info-group .button-primary {
+    margin-top: 3em;
+    padding: 1em;
+}
+
+.pl-title-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pl-title-group h1 {
+    font-family: 'inter-bold';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+.pl-title-group h2 {
+    text-align: right;
+    font-family: 'inter-regular';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+.pl-reviews {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #BBBBBB;
+}
+
+.pl-reviews-top-title-group h4 {
+    font-family: 'inter-bold';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.pl-reviews-top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pl-reviews-top-review {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    width: 30%;
+}
+
+.pl-reviews-top-title-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pl-reviews-star-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 7em;
+}
+
+/*learned here: https://www.w3schools.com /howto/ howto_css_star_rating.asp*/
+.checked {
+    color: orange;
+}
+
+.pl-reviews-leave {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 60%;
+}
+
+.pl-reviews-leave .fields {
+    margin-top: 1em;
+}
+
+/*learned here: https://www.w3schools.com/tags/tag_textarea.asp*/
+.pl-reviews-leave-review {
+    height: 20em;
+}
+
+.button {
+    margin-top: 1em;
+    width: 40%
+}
+
