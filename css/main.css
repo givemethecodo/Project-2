@@ -117,6 +117,7 @@ img a {
 .style-guide-category {
     background: #ebeade;
     padding: 1em;
+    margin-bottom: 2em;
 }
 
 .style-guide-element {
@@ -196,6 +197,10 @@ nav ul {
     text-decoration: none;
     /* border:2px solid white; */
     /* text-decoration: underline solid 0.4rem #c5996a; */
+}
+
+.subheading {
+  color: grey;
 }
 
 /* for computer/laptop */
