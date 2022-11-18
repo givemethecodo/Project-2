@@ -4,7 +4,8 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Vessel | About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vessels | About</title>
 
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
@@ -13,52 +14,54 @@
   </head>
 
 <body>
-<section>
-  <nav>
-        <div class="navbar">
-            <a class="nav-links" href="product_listing.html">Shop</a>
-            <a class="nav-links" href="about.html">About</a>
-            <div class="nav-space"></div>
-            <a class="nav-logo nav-links" href="../index.html">Vessels</a>
-            <div class="nav-space"> </div>
-            <a class="nav-links" href="cart.html">Checkout Cart</a>
-        </div>
-  </nav>
+
+  <section>
+    <nav>
+      <div class="navbar">
+          <a class="nav-links" href="product_listing.html">Shop</a>
+          <a class="nav-links" href="about.html">About</a>
+          <div class="nav-space"></div>
+          <a class="nav-logo nav-links" href="../index.html">Vessels</a>
+          <div class="nav-space"> </div>
+          <a class="nav-links" href="cart.html">Checkout Cart</a>
+      </div>
+    </nav>
   </section>
 
-<section class="about-us-spacing">
-  <br>
-  <br>
-  <br>
-  <h1>About Us</h1>
-  <p> We believe in slow design. We’ve connected with artisan groups from around the globe to preserve and honour traditional artistry, and we love the idea of limited edition, small-batch homewares that can be admired for a very long time.
-    We believe in knowing the origin of the products we buy, as well as the impact of our consumption—not only on the environment, but also on the communities and individuals that create them.
-    From homewares created in partnership with like-minded co-ops to goods sourced from global artisans who share our ethos, every Obakki product reflects our values of sustainability, traceability and ethical production.</p>
+<section class="container">
+  <div class="space-ontop">
+    <h1>About Us</h1>
+    <p> We believe in slow design. We’ve connected with artisan groups from around the globe to preserve and honour traditional artistry, and we love the idea of limited edition, small-batch homewares that can be admired for a very long time.
+      We believe in knowing the origin of the products we buy, as well as the impact of our consumption—not only on the environment, but also on the communities and individuals that create them.
+      From homewares created in partnership with like-minded co-ops to goods sourced from global artisans who share our ethos, every Obakki product reflects our values of sustainability, traceability and ethical production.
+    </p>
+  </div>
+
 
 </section>
 
- <section>
-    <body>
-        <!-- learned from https://paperform.co/blog/html-contact-form/ -->
-        <h3>Contact us</h3>
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                <label for="Name" class="fcf-label">Your name</label>
-                <div class="fcf-input-group">
-                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+ <section class="container">
+            <div class="pl-reviews-leave">
+                <h1>Contact Us</h1>
+                <div class="fields">
+                    <label class="checkout-form-field" for="Name">
+                        <span class="checkout-form-field-label">Name</span>
+                        <input type="text" id="Name" name="Name" class="checkout-form-field-input" required>
+                    </label>
                 </div>
-            <div class="fcf-form-group">
-                <label for="Email" class="fcf-label">Your email address</label>
-                <div class="fcf-input-group">
-                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                <div class="fields">
+                    <label class="checkout-form-field" for="Email">
+                        <span class="checkout-form-field-label">Email Address</span>
+                        <input type="email" id="Email" name="Email" class="checkout-form-field-input" required>
+                    </label>
                 </div>
-            <div class="fcf-form-group">
-                <label for="Message" class="fcf-label">Your message</label>
-                <div class="fcf-input-group">
-                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                <div class="fields">
+                    <label class="checkout-form-field pl-reviews-leave-review" for="Message">
+                        <span class="checkout-form-field-label">Your Message</span>
+                        <input type="message" id="Message" name="Message" class="checkout-form-field-input" type="text" required/>
+                    </label>
                 </div>
-            </div>
-            <div class="fcf-form-group">
-                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+                <a href="reviewconfirmation.html"><button class="button button-primary">SUBMIT</button></a>
             </div>
 </section>
 
@@ -67,16 +70,19 @@
     <h3>Support</h3>
     <a href="about.html" class="active-link">Contact Us</a>
   </div>
+  <div class="nav-space"> </div>
   <div class="footer-column">
     <h3>Follow</h3>
     <a href="companyupdates.html" class="active-link">Company Updates</a>
     <a href="https://www.instagram.com/vessels_officialartisans" class="active-link">Instagram</a>
   </div>
+  <div class="nav-space"> </div>
   <div class="footer-column">
     <h3>Resources</h3>
     <a href="styleguide.html" class="active-link">Style Guide</a>
     <a href="https://github.com/givemethecodo/Project-2" class="active-link">Github</a>
     <a href="citations.html" class="active-link">Citations</a>
   </div>
+  <div class="nav-space-more"> </div>
 </footer>
 </body>

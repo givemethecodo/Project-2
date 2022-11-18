@@ -121,8 +121,12 @@ img a {
 
 .style-guide-element {
     background: white;
+    padding: 2em;
 }
 
+.space-ontop {
+    margin-top: 3em;
+}
 
 /*
   INTERACTIVE ELEMENTS -------------------
@@ -131,7 +135,7 @@ img a {
 /* Styling + hover state for links and images learned from https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
 .image-as-link:hover, .image-as-link:focus {
     /* box-shadow: 5px 5px 5px 5px #8888 ; */
-    border: 5px solid #987868;
+    border: 5px solid #45362e;
     transition-duration: 0.5s;
 
 }
@@ -163,9 +167,9 @@ img a {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav ul {
@@ -500,11 +504,7 @@ nav ul {
 
 /* okay so after here is to be super edited */
 .CartContainer {
-    width: 70%;
-    height: 90%;
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 10px 20px #1687d933;
+    padding: 5em 0;
 }
 
 .Header {
@@ -518,14 +518,12 @@ nav ul {
 
 .Heading {
     font-size: 20px;
-    font-family: 'Open Sans';
     font-weight: 700;
     color: #2F3841;
 }
 
 .Action {
     font-size: 14px;
-    font-family: 'Open Sans';
     font-weight: 600;
     color: #E44C4C;
     cursor: pointer;
@@ -544,6 +542,10 @@ nav ul {
 .image-box {
     width: 15%;
     text-align: center;
+}
+
+.img-same-height {
+  height: 120px;
 }
 
 .about {
@@ -639,13 +641,11 @@ hr {
 }
 
 .checkout {
-    float: right;
-    margin-right: 5%;
-    width: 28%;
+    width: 30em;
+    margin: auto;
 }
 
 .total {
-    width: 100%;
     display: flex;
     justify-content: space-between;
 }
