@@ -86,16 +86,20 @@ img a {
 
 .landing {
     width: 100vw;
+    position: relative;
 }
 
 .landing img {
     width: 100vw;
+    height: auto;
 }
 
 .landing button {
-    position: relative;
-    bottom: 15rem;
-    left: 34vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
 }
 
 footer {
@@ -171,48 +175,32 @@ footer {
     transition: background-color 0.5s ease-out;
 }
 
+
 /*Navbar styling learned from: https://www.w3schools.com/css/css_navbar_horizontal.asp */
 .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul {
     background-color: white;
-    display: flex;
     width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
 }
 
 .nav li a {
-    display: block;
     color: #0e0e0e;
     text-align: center;
     padding: 14px 16px;
-    /* text-decoration: none; */
     /* solution for underline transition referenced from: https://stackoverflow.com/questions/46119919/fade-in-and-out-underline-when-hovering */
     transition-duration: 0.1s;
-    /* background-color: white; */
-    /* border:2px solid #c5996a; */
-    border-bottom: 4px solid #c5996a transparent;
-    /* text-decoration: underline solid 0.4rem transparent; */
+    border-bottom: 4px solid rgba(197, 153, 106,0);
     text-decoration: none;
 }
 
-.nav li img {
-    height: 2rem;
-}
 
 .nav li a:hover, .nav li a:focus {
     /* text-decoration: underline; */
@@ -224,11 +212,100 @@ nav ul {
     /* text-decoration: underline solid 0.4rem #c5996a; */
 }
 
+@media (min-width:961px)  {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 4.5em;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0.5) 100%);
+    z-index: 100;
+  }
 
-.nav-element:hover .nav-element:focus {
-    /*Underline learned from: https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
-    text-decoration: underline;
-    transition-duration: 0.5s;
+  .navbar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .nav-space {
+    flex-grow: 2;
+  }
+
+  .nav-logo {
+      font-family: 'poynter-bold';
+      font-size: 2em;
+      text-decoration: none;
+      color: #0e0e0e;
+      border-bottom:
+  }
+
+  .nav-links {
+      padding: 1rem 2rem;
+      color: #0e0e0e;
+      border-bottom: 4px solid rgba(0,212,255,0);
+      text-decoration: none;
+  }
+
+  .nav-links:hover, .nav-links:focus{
+      transition-duration: 0.1s;
+      border-bottom: 4px solid #c5996a;
+  }
+
+  .nav-element:hover .nav-element:focus {
+      /*Underline learned from: https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+      text-decoration: underline;
+      transition-duration: 0.5s;
+  }
+}
+
+@media (max-width:961px)  {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 4.5em;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0.5) 100%);
+    z-index: 100;
+  }
+
+  .navbar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .nav-space {
+    flex-grow: 2;
+  }
+
+  .nav-logo {
+      font-family: 'poynter-bold';
+      font-size: 2em;
+      text-decoration: none;
+      color: #0e0e0e;
+      border-bottom:
+  }
+
+  .nav-links {
+      padding: 1rem 1rem;
+      color: #0e0e0e;
+      border-bottom: 4px solid rgba(0,212,255,0);
+      text-decoration: none;
+  }
+
+  .nav-links:hover, .nav-links:focus{
+      transition-duration: 0.1s;
+      border-bottom: 4px solid #c5996a;
+  }
+
+  .nav-element:hover .nav-element:focus {
+      /*Underline learned from: https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+      text-decoration: underline;
+      transition-duration: 0.5s;
+  }
 }
 
 /*button styling learned from: https://www.w3schools.com/css/css3_buttons.asp*/
@@ -650,36 +727,6 @@ hr {
     outline: 0;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.nav-logo {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    padding: 1rem 2rem;
-
-    font-family: 'poynter-bold';
-    font-size: 36px;
-    text-decoration: none;
-    color: #0e0e0e;
-}
-
-.nav-links {
-    padding: 1rem 2rem;
-    color: #0e0e0e;
-    border-bottom: 4px solid white;
-    text-decoration: none;
-}
-
-.nav-links:hover, .nav-links:focus {
-    transition-duration: 0.1s;
-    border-bottom: 4px solid #c5996a;
-}
-
 /*positioning for the confirmation page*/
 /*take all the height learned here: https://codepen.io/micjamking/pen/QdojLz*/
 .body-container {
@@ -831,4 +878,3 @@ hr {
     margin-top: 1em;
     width: 40%
 }
-
