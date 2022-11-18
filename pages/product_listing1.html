@@ -16,7 +16,6 @@
 
 <body>
 
-  <section>
     <nav>
       <div class="navbar">
           <a class="nav-links" href="product_listing.html">Shop</a>
@@ -27,12 +26,11 @@
           <a class="nav-links" href="cart.html">Checkout Cart</a>
       </div>
     </nav>
-  </section>
 
   <div class="body-container">
     <div class="body-main">
         <div class="pl-main-group">
-            <img src="../Images/test.png">
+            <img src="../Images/test.png" alt="The Plisse Vase">
             <div class="pl-info-group">
                 <div class="pl-title-group">
                     <h1>The Plissé Ceramic Vase</h1>
@@ -49,11 +47,9 @@
                     <div class="count" id="product_qty">1</div>
                     <div class="btn" onclick="incrementValue()">+</div>
                 </div>
-                <a href="cart.html">
-                    <button class="button button-primary">
-                        ADD TO CART
-                    </button>
-                </a>
+                <form action="cart.html" method="get">
+                  <button class="button button-primary">ADD TO CART</button>
+                </form>
             </div>
         </div>
         <div class="pl-reviews">
@@ -118,16 +114,18 @@
                 <div class="fields">
                     <label class="checkout-form-field">
                         <span class="checkout-form-field-label">Title</span>
-                        <input class="checkout-form-field-input" type="text"/>
+                        <input class="checkout-form-field-input" type="text">
                     </label>
                 </div>
                 <div class="fields">
                     <label class="checkout-form-field pl-reviews-leave-review">
                         <span class="checkout-form-field-label">Review</span>
-                        <input class="checkout-form-field-input" type="text"/>
+                        <input class="checkout-form-field-input" type="text">
                     </label>
                 </div>
-                <a href="reviewconfirmation.html"><button class="button button-primary">SUBMIT</button></a>
+                <form action="reviewconfirmation.html" method="get">
+                  <button class="button button-primary">SUBMIT</button>
+                </form>
             </div>
         </div>
     </div>

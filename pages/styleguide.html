@@ -15,22 +15,19 @@
 
 <body>
 
-  <section>
     <nav>
       <div class="navbar">
           <a class="nav-links" href="product_listing.html">Shop</a>
           <a class="nav-links" href="about.html">About</a>
           <div class="nav-space"></div>
           <a class="nav-logo nav-links" href="../index.html">Vessels</a>
-          <div class="nav-space"> </div>
+          <div class="nav-space"></div>
           <a class="nav-links" href="cart.html">Checkout Cart</a>
       </div>
     </nav>
-  </section>
 
     <h1 class="space-ontop align-center">Vessesl Style Guide</h1>
 
-  <section>
     <ul class="nav">
       <li><a href="#typography">Typography</a></li>
       <li><a href="#interactive_elements">Interactive Elements</a></li>
@@ -42,13 +39,12 @@
     </ul>
 
     <!-- TYPOGRAPHY SECTION // -->
-  </section>
   <section id="typography" class="style-guide-category">
     <h2>Typography</h2>
     <section class="style-guide-element">
       <h3 class="align-center">Type Scale</h3>
 
-      <div class="container center-vertical ">
+      <div class="container center-vertical">
         <div class="block align-left">
           <h1>This is my H1</h1>
           <p>Sample code:</p>
@@ -89,10 +85,9 @@
         </div>
       </div>
     </section>
-  </section>
+</section>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
-
   <section id="interactive_elements" class="style-guide-category">
     <h2> Interactive elements</h2>
     <section class="style-guide-element">
@@ -115,6 +110,7 @@
         </div>
       </div>
     </section>
+
     <section class="style-guide-element">
       <h3 class="align-center">Navigation</h3>
       <ul class="nav">
@@ -127,6 +123,7 @@
         <br>&lt;li&gt;&lt;a href="#styleguide.html"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
         <br>&lt;/ul&gt;</code>
     </section>
+
     <section class="style-guide-element">
       <!--referenced from w3 schools, in text links
       https://www.w3schools.com/html/html_images.asp-->
@@ -137,16 +134,18 @@
       <p>Sample code:</p>
       <code>&lt;a href="http://www.fioravanti.eu/about" class="active-link"&gt;click on this it's an inline link&lt;/a&gt;</code>
     </section>
+
     <section class="style-guide-element">
       <!--referenced from w3 schools, image as a link
       https://www.w3schools.com/html/html_images.asp#gsc.tab=0-->
       <h3 class="align-center">Image as a link</h3>
-      <div class = "column image-link-column" >
+      <div class = "column image-link-column">
         <div class = "image-link-block" >
           <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
             <img src="../images/test.png"
-                 alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;" class="image-as-link">
+                 alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;">
           </a>
+        </div>
         </div>
       <p>Sample code:</p>
       <code>&lt;a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg"&gt;
@@ -155,6 +154,7 @@
         <br>&lt;/a&gt;
       </code>
     </section>
+
     <section class="style-guide-element">
       <!--referenced from w3 schools, input field
       https://www.w3schools.com/html/html_form_input_types.asp-->
@@ -198,7 +198,7 @@
       <p>Sample code:</p>
       <code>&lt;p&gt;This is a paragraph...&lt;/p&gt;</code>
     </section>
-  </section>
+
      <section class="style-guide-element">
       <!--referenced from w3 schools, unordered lists
       https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered-->
@@ -217,7 +217,7 @@
       </code>
     </section>
     <section class="style-guide-element">
-      referenced from w3 schools, ordered lists
+      <!-- referenced from w3 schools, ordered lists
       https://www.w3schools.com/html/html_lists.asp-->
       <h2>Numbered Lists</h2>
       <ol>
@@ -233,7 +233,7 @@
         <br>&lt;/ol&gt;
       </code>
     </section>
-  </section>
+    </section>
 
   <section id="product_listing" class="style-guide-category">
     <h2>Product Listing</h2>
@@ -244,19 +244,20 @@
         <div class = "image-link-block" >
           <a href="https://static.smallable.com/1104149-720x720q80/glass-vase.jpg">
             <img src="../images/test.png"
-                 alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;" class="image-as-link">
+                 alt="vase" class="image-link-border image-as-link" style="width:290px;height:465px;">
           </a>
         </div>
-        <div class = "container image-link-container" >
+        <div class = "container image-link-container">
           <div class = "image-link-block align-left">
             <h2>The Plissé</h2>
           </div>
           <div class = "image-link-block align-right">
-            <body>$75.00</body>
+            <p>$75.00</p>
           </div>
         </div>
         <div class = "image-link-block" >
-          <body>Vase</body> </div>
+          <p>Vase</p>
+        </div>
       </div>
     </section>
   </section>
@@ -268,48 +269,48 @@
       <div class=".checkout-form-container">
         <h2>Shipping Address</h2>
         <p>Please enter your shipping details.</p>
-        <checkout-form-hr />
+        <checkout-form-hr></checkout-form-hr>
         <div class="checkout-form">
 
         <div class="fields fields--2">
-          <label class="checkout-form-field">
-            <span class="checkout-form-field-label" for="firstname">First name</span>
-            <input class="checkout-form-field-input" type="text" id="firstname"  />
+          <label class="checkout-form-field" for="firstname">
+            <span class="checkout-form-field-label">First name</span>
+            <input class="checkout-form-field-input" type="text" id="firstname">
           </label>
-          <label class="checkout-form-field">
-            <span class="checkout-form-field-label" for="lastname">Last name</span>
-            <input class="checkout-form-field-input" type="text" id="lastname"  />
+          <label class="checkout-form-field" for="lastname">
+            <span class="checkout-form-field-label">Last name</span>
+            <input class="checkout-form-field-input" type="text" id="lastname">
           </label>
         </div>
-        <label class="checkout-form-field">
-          <span class="checkout-form-field-label" for="address">Address</span>
-          <input class="checkout-form-field-input" type="text" id="address" />
+        <label class="checkout-form-field" for="address">
+          <span class="checkout-form-field-label">Address</span>
+          <input class="checkout-form-field-input" type="text" id="address">
         </label>
-        <label class="checkout-form-field">
-          <span class="checkout-form-field-label" for="country">Country</span>
+        <label class="checkout-form-field" for="country">
+          <span class="checkout-form-field-label">Country</span>
           <select class="checkout-form-field-input" id="country">
-            <option value=""></option>
+            <option value="--">--</option>
             <option value="canada">Canada</option>
           </select>
         </label>
         <div class="fields fields--3">
-          <label class="checkout-form-field">
-            <span class="checkout-form-field-label" for="postalcode">Postal code</span>
-            <input class="checkout-form-field-input" type="text" id="zipcode" />
+          <label class="checkout-form-field" for="zipcode">
+            <span class="checkout-form-field-label">Postal code</span>
+            <input class="checkout-form-field-input" type="text" id="zipcode">
           </label>
-          <label class="checkout-form-field ">
-            <span class="checkout-form-field-label" for="city">City</span>
-            <input class="checkout-form-field-input" type="text" id="city" />
+          <label class="checkout-form-field" for="city">
+            <span class="checkout-form-field-label">City</span>
+            <input class="checkout-form-field-input" type="text" id="city">
           </label>
-          <label class="checkout-form-field ">
-            <span class="checkout-form-field-label" for="province">Province</span>
+          <label class="checkout-form-field" for="province">
+            <span class="checkout-form-field-label">Province</span>
             <select class="checkout-form-field-input" id="province">
               <option value="british columbia">British Columbia</option>
             </select>
           </label>
         </div>
         </div>
-        <checkout-form-hr>
+        <checkout-form-hr></checkout-form-hr>
 
       </div>
       <!-- payment form-->
@@ -321,118 +322,42 @@
       <label class="radio" for="Visa">Visa</label>
       <input class="radio" type="radio" id="Mastercard" name="radio-color">
       <label class="radio" for="Mastercard">Mastercard</label>
-      <checkout-form-hr />
+      <checkout-form-hr></checkout-form-hr>
         <div class="checkout-form">
-        <label class="checkout-form-field">
-          <span class="checkout-form-field-label" for="Card Number">Card Number</span>
-          <input class="checkout-form-field-input" type="text" id="Card Number" />
+        <label class="checkout-form-field" for="CardNumber">
+          <span class="checkout-form-field-label">Card Number</span>
+          <input class="checkout-form-field-input" type="text" id="CardNumber">
         </label>
-        <label class="checkout-form-field">
-          <span class="checkout-form-field-label" for="Cardholder Name">Cardholder Name</span>
-          <input class="checkout-form-field-input" type="text" id="address" />
+        <label class="checkout-form-field" for="CardholderName">
+          <span class="checkout-form-field-label">Cardholder Name</span>
+          <input class="checkout-form-field-input" type="text" id="CardholderName">
         </label>
         <div class="fields fields--3">
-          <label class="checkout-form-field">
-            <span class="checkout-form-field-label" for="Expiration date">Expiration Date MM/YY</span>
-            <input class="checkout-form-field-input" type="text" id="Expiration date" />
+          <label class="checkout-form-field" for="Expirationdate">
+            <span class="checkout-form-field-label">Expiration Date MM/YY</span>
+            <input class="checkout-form-field-input" type="text" id="Expirationdate">
           </label>
           <div class="fields fields--3">
-            <label class="checkout-form-field">
-              <span class="checkout-form-field-label" for="Security Code">Security Code</span>
-              <input class="checkout-form-field-input" type="text" id="Security Code" />
+            <label class="checkout-form-field" for="SecurityCode">
+              <span class="checkout-form-field-label">Security Code</span>
+              <input class="checkout-form-field-input" type="text" id="SecurityCode">
             </label>
         </div>
         </div>
-        <checkout-form-hr>
+        <checkout-form-hr></checkout-form-hr>
         <button class="button button-primary button-checkout">Pay Now</button>
       </div>
-      <!-- <div class="block payment_info">
-        <label for="debit">Debit Card</label>
-        <input class="radio" type="radio" id="debit" name="card" value="radio">
-        <label for="credit">Credit Card</label>
-        <input class="radio" type="radio" id="credit" name="card" value="radio">
       </div>
-      <div class="block payment_info">
-        <h3>Contact Information</h3>
-        <label for="name_on_card">Name on card</label>
-        <input type="text" id="name_on_card" class="field-input" name="name_on_card" placeholder="John Doe">
-        <label for="card_number">Card Number</label>
-        <input type="text" id="card_number" class="field-input" name="card_number" placeholder="**** **** **** ****">
-        <label for="card_cvc">Security Number</label>
-        <input type="text" id="card_cvc" class="field-input" name="card_cvc" placeholder="CVC">
-        <label for="card_expiration">Expiration Date</label>
-        <input type="text" id="card_expiration" class="field-input" name="card_expiration" placeholder="MM / YY">
-         <!--add email and/or phone number text inputs // -->
-        <!-- <label for="email">Email</label>
-        <input type="text" id="email" class="field-input" name="email" placeholder="jdoe@gmail.com">
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" class="field-input" name="phone" placeholder="(123) 123 2345">
       </div>
-      <div class="block payment_info">
-        <h3>Address Information</h3>
-        add address text input //
-        <label for="address1">Address Line 1</label>
-        <input type="text" id="address1" class="field-input" name="address1" placeholder="Street Address">
-        <label for="address2">Address Line 2</label>
-        <input type="text" id="address2" class="field-input" name="address2" placeholder="Street Address line 2 (optional)">
-        <label for="city">City</label>
-        <input type="text" id="city" class="field-input" name="city" placeholder="City">
-        <label for="postal_code">Postal Code</label>
-        <input type="text" id="postal_code" class="field-input" name="postal_code" placeholder="123 456">
-        <label for="prov_state">Province or State</label>
-        <input type="text" id="prov_state" class="field-input" name="prov_state" placeholder="AB">
-        <label for="country">Country</label>
-        <input type="text" id="country" class="field-input" name="country" placeholder="Country">
-      </div>
-      <div class="block">
-        <button type="submit" class="button button-primary" value="Submit">Submit</button>
-      </div>
-    </div> -->
 
 </section>
-
-<!-- <div class="container">
-    <div class="block align-center">
-        <h3>Plisse vase</h3>
-        <p><strong>$175</strong></p>
-        <img src="../images/plisse.jpeg" alt="plisse vase" width="200" height="250" class="image-as-link"><br>
-        <a href="/link to detailed description/" class="active-link">Link to detailed description </a>
-    </div>
-    <div class="block align-center">
-        <h3>Layer cake vase</h3>
-        <p><strong>$175</strong></p>
-        <img src="../images/layer cake.jpeg" alt="plisse vase" width="200" height="250" class="image-as-link"><br>
-        <a href="/link to detailed description/" class="active-link">Link to detailed description </a>
-    </div>
-</div>
-
-<div class="container border">
-    <div class="block align-center">
-        <strong> SUBTOTAL: </strong> $350
-    </div>
-    <div class="block align-center">
-        <strong> SHIPPING: </strong> $10
-    </div>
-    <div class="block align-center">
-        <strong> TAXES: </strong> $45.66
-    </div>
-    <div class="block align-center">
-        <strong> TOTAL: </strong> $405.66
-    </div>
-</div>
-
-<div class="container">
-    <div class="block align-center">
-        <button class="button button-primary">PURCHASE</button>
-    </div>
-</div> -->
 
 <section id="checkout_cart" class="space-ontop style-guide-category">
     <h2>Shopping Cart</h2>
     <div class="container style-guide-element">
       <div class="Cart-Items">
          <div class="image-box">
-           <img class="img-same-height" src="../images/plisse.jpeg" alt="The Warp vase"/>
+           <img class="img-same-height" src="../images/plisse.jpeg" alt="The Warp Vase">
          </div>
          <div class="about">
            <h3>The Warp</h3>
@@ -456,7 +381,7 @@
             </div>
             <div class="amount" id="amount2">65.00</div>
           </div>
-          <a href="#checkout_cart"><button class="button button-secondary">Checkout</button></a>
+          <button class="button button-secondary">Checkout</button>
        </div>
    </div>
 
@@ -466,28 +391,27 @@
     <h2>Contact Form</h2>
              <div class="pl-reviews-leave style-guide-element">
                  <div class="fields">
-                     <label class="checkout-form-field" for="Name">
+                     <label class="checkout-form-field" for="Name1">
                          <span class="checkout-form-field-label">Name</span>
-                         <input type="text" id="Name" name="Name" class="checkout-form-field-input" required>
+                         <input type="text" id="Name1" name="Name1" class="checkout-form-field-input">
                      </label>
                  </div>
                  <div class="fields">
                      <label class="checkout-form-field" for="Email">
                          <span class="checkout-form-field-label">Email Address</span>
-                         <input type="email" id="Email" name="Email" class="checkout-form-field-input" required>
+                         <input type="email" id="Email" name="Email" class="checkout-form-field-input">
                      </label>
                  </div>
                  <div class="fields">
                      <label class="checkout-form-field pl-reviews-leave-review" for="Message">
                          <span class="checkout-form-field-label">Your Message</span>
-                         <input type="message" id="Message" name="Message" class="checkout-form-field-input" type="text" required/>
+                         <input id="Message" name="Message" class="checkout-form-field-input" type="text">
                      </label>
                  </div>
-                 <a href="reviewconfirmation.html"><button class="button button-primary">SUBMIT</button></a>
+                 <button class="button button-primary">SUBMIT</button>
              </div>
  </section>
 
-<section>
   <footer>
     <div class="footer-column">
       <h3>Support</h3>
@@ -508,7 +432,7 @@
     </div>
     <div class="nav-space-more"> </div>
   </footer>
-</html>
-</section>
 
 </body>
+
+</html>

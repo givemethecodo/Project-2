@@ -15,7 +15,6 @@
 
 <body>
 
-  <section>
     <nav>
       <div class="navbar">
           <a class="nav-links" href="product_listing.html">Shop</a>
@@ -26,7 +25,6 @@
           <a class="nav-links" href="cart.html">Checkout Cart</a>
       </div>
     </nav>
-  </section>
 
 <section class="container">
   <div class="space-ontop">
@@ -36,8 +34,6 @@
       From homewares created in partnership with like-minded co-ops to goods sourced from global artisans who share our ethos, every Obakki product reflects our values of sustainability, traceability and ethical production.
     </p>
   </div>
-
-
 </section>
 
  <section class="container">
@@ -58,10 +54,12 @@
                 <div class="fields">
                     <label class="checkout-form-field pl-reviews-leave-review" for="Message">
                         <span class="checkout-form-field-label">Your Message</span>
-                        <input type="message" id="Message" name="Message" class="checkout-form-field-input" type="text" required/>
+                        <input id="Message" name="Message" class="checkout-form-field-input" type="text" required>
                     </label>
                 </div>
-                <a href="reviewconfirmation.html"><button class="button button-primary">SUBMIT</button></a>
+                <form action="reviewconfirmation.html" method="get">
+                  <button class="button button-primary">SUBMIT</button>
+                </form>
             </div>
 </section>
 

@@ -15,7 +15,7 @@
 
 <body>
 
-  <section>
+  <div>
     <nav>
       <div class="navbar">
           <a class="nav-links" href="pages/product_listing.html">Shop</a>
@@ -26,9 +26,7 @@
           <a class="nav-links" href="pages/cart.html">Checkout Cart</a>
       </div>
     </nav>
-  </section>
-
-  <section>
+  </div>
     <!-- reference: https://www.w3schools.com/tags/tag_picture.asp -->
     <div class="landing">
       <picture>
@@ -36,16 +34,17 @@
         <source media="(min-width:961px)" srcset="images/homepage-landing-x2.png">
           <img
             srcset="images/homepage-landing-x1.png 589w, images/homepage-landing-x2.png 1399w"
+            sizes="(max-width: 300px) 100vw, (max-width: 600px) 50vw, (max-width: 900px) 33vw, 900px"
             src="images/homepage-landing-x1.png"
             alt="A table of our purchasable vases">
       </picture>
-      <a href="pages/product_listing.html"><button class="button button-primary">SEE ALL PRODUCTS</button></a>
+      <form action="pages/product_listing.html" method="get">
+        <button class="button button-primary">SEE ALL PRODUCTS</button>
+      </form>
     </div>
 
 
     <!-- <h1>Vessels</h1> -->
-
-  </section>
 
   <footer>
     <div class="footer-column">
@@ -67,7 +66,5 @@
     </div>
     <div class="nav-space-more"> </div>
   </footer>
-
-
 
 </body>
