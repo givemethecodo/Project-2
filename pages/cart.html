@@ -15,7 +15,6 @@
 
 <body>
 
-  <section>
     <nav>
       <div class="navbar">
           <a class="nav-links" href="product_listing.html">Shop</a>
@@ -26,7 +25,6 @@
           <a class="nav-links" href="cart.html">Checkout Cart</a>
       </div>
     </nav>
-  </section>
 
   <section id="checkout_cart" class="space-ontop CartContainer">
       <div class="container">
@@ -36,7 +34,7 @@
 
         <div class="Cart-Items">
          	 <div class="image-box">
-         	   <img class="img-same-height" src="../images/plisse.jpeg" alt="The Warp vase"/>
+         	   <img class="img-same-height" src="../images/plisse.jpeg" alt="The Warp vase">
          	 </div>
          	 <div class="about">
          	 	 <h3>The Warp</h3>
@@ -60,7 +58,11 @@
               </div>
               <div class="amount" id="amount2">65.00</div>
             </div>
-            <a href="payment.html"><button class="button button-secondary">Checkout</button></a>
+
+            <form action="payment.html" method="get">
+              <button class="button button-secondary">Checkout</button>
+            </form>
+
          </div>
      </div>
 
