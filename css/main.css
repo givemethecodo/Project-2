@@ -794,8 +794,8 @@ hr {
     font-family: 'inter-bold';
     font-weight: 700;
     font-size: 2em;
-    line-height: 2.4375em;
     text-transform: uppercase;
+    width: 15rem;
 }
 
 .pl-title-group h2 {
